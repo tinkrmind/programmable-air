@@ -4,7 +4,7 @@
 
 [Slideshow](https://docs.google.com/presentation/d/1pUnGk4v_wuCpisjBpNWZSJUyDwAFb4v1xceV4rX-Uv4/edit?usp=sharing)
 
-I started out making in truth at IISc where I saw niche markets being exploited by hardware manufacturers. Sub-par equipment is often lauded as the best solution only because it's the only solution. As a result I worked directly with researchers making equipment for measuring elephant height, insect wing- beat frequency, underwater gates for fishes.. I see the same issue with soft robotics today.
+I started out making in earnest at IISc where I saw niche markets being exploited by hardware manufacturers. Sub-par equipment is often lauded as the best solution only because it's the only solution. As a result I worked directly with researchers making equipment for measuring elephant height, insect wing- beat frequency, underwater gates for fishes.. I see the same issue with soft robotics today.
 
 The field of inflatable robotics is still in it's infancy. So there are a lot of low hanging fruit up for grabs. As such, the more people involved in active experimentation, the faster the field will mature.
 
