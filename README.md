@@ -32,3 +32,6 @@ Methods of potentially reducing cost:
 - __Cheaper arduino alternative__: An arduino mega is overkill for this. Any atmega324 based boards is sufficient
 
 The __weakest link__ in this setup however is the __mess of jumper cable__ connections. There is no justifiable reason for a beginners kit to be this complicated to setup especially when the cost can be reduced simultaneously by making the setup into a PCB.
+
+Pressure profiles editable on the browser.
+Wifi board host server, no programming.
