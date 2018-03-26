@@ -2,7 +2,7 @@
 
 ## Elevator Pitch
 
-[Slideshow](https://docs.google.com/presentation/d/1pUnGk4v_wuCpisjBpNWZSJUyDwAFb4v1xceV4rX-Uv4/edit?usp=sharing)
+### [Slideshow](https://docs.google.com/presentation/d/1pUnGk4v_wuCpisjBpNWZSJUyDwAFb4v1xceV4rX-Uv4/edit?usp=sharing)
 
 I started out making in earnest at IISc where I saw niche markets being exploited by hardware manufacturers. Sub-par equipment is often lauded as the best solution only because it's the only solution. As a result I worked directly with researchers making equipment for measuring elephant height, insect wing- beat frequency, underwater gates for fishes.. I see the same issue with soft robotics today.
 
@@ -32,3 +32,6 @@ Methods of potentially reducing cost:
 - __Cheaper arduino alternative__: An arduino mega is overkill for this. Any atmega324 based boards is sufficient
 
 The __weakest link__ in this setup however is the __mess of jumper cable__ connections. There is no justifiable reason for a beginners kit to be this complicated to setup especially when the cost can be reduced simultaneously by making the setup into a PCB.
+
+Pressure profiles editable on the browser.
+Wifi board host server, no programming.
