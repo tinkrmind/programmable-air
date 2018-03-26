@@ -2,6 +2,8 @@
 
 ## Elevator Pitch
 
+![quad-chart](https://i.imgur.com/VRT51xQ.png)
+
 ### [Slideshow](https://docs.google.com/presentation/d/1pUnGk4v_wuCpisjBpNWZSJUyDwAFb4v1xceV4rX-Uv4/edit?usp=sharing)
 
 I started out making in earnest at IISc where I saw niche markets being exploited by hardware manufacturers. Sub-par equipment is often lauded as the best solution only because it's the only solution. As a result I worked directly with researchers making equipment for measuring elephant height, insect wing- beat frequency, underwater gates for fishes.. I see the same issue with soft robotics today.
