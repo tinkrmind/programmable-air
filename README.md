@@ -41,3 +41,9 @@ Wifi board host server, no programming.
 ![pressures](https://i.imgur.com/VEkwqKP.png)
 
 The common pressures are of the range -0.5 atm to 2.5 atm. Ideally we'd want to work in this entire range.
+
+Choosing a pressure sensor is tough! There's far too many choices and every datasheet seems to have come from a different universe. Who uses hectoPascals?! Here's some bare minimum info you need before searching for sensors:
+
+-  [Difference between absolute, guage and differential sensors](https://www.first-sensor.com/en/products/pressure-sensors/pressure-sensors-and-transmitters/pressure-types.html)
+- [DigiKey sensor guide](https://www.digikey.com/en/resources/sensors/pressure-sensors)
+- [Basic of fluid physics](http://www.pneumaticsonline.com/BasicTraining/default.htm)
