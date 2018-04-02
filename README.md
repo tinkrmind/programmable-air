@@ -38,7 +38,7 @@ The __weakest link__ in this setup however is the __mess of jumper cable__ conne
 Pressure profiles editable on the browser.
 Wifi board host server, no programming.
 
-![pressures](https://i.imgur.com/VEkwqKP.png)
+![pressures](https://i.imgur.com/vU1OVzw.png)
 
 The common pressures are of the range -0.5 atm to 2.5 atm. Ideally we'd want to work in this entire range.
 
