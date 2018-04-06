@@ -35,15 +35,44 @@ Methods of potentially reducing cost:
 
 The __weakest link__ in this setup however is the __mess of jumper cable__ connections. There is no justifiable reason for a beginners kit to be this complicated to setup especially when the cost can be reduced simultaneously by making the setup into a PCB.
 
-Pressure profiles editable on the browser.
-Wifi board host server, no programming.
+### Let's start making!
 
 ![pressures](https://i.imgur.com/vU1OVzw.png)
 
-The common pressures are of the range -0.5 atm to 2.5 atm. Ideally we'd want to work in this entire range.
+The common pressures are of the range -0.5 atm to 2.5 atm. Ideally we'd want to work in this entire range. Ideally, the pressure profile would be editable over a web interface, without any software/driver installation.
+
+#### Learning basic fluid mechanics and the lingo of the field
 
 Choosing a pressure sensor is tough! There's far too many choices and every datasheet seems to have come from a different universe. Who uses hectoPascals?! Here's some bare minimum info you need before searching for sensors:
 
 -  [Difference between absolute, guage and differential sensors](https://www.first-sensor.com/en/products/pressure-sensors/pressure-sensors-and-transmitters/pressure-types.html)
 - [DigiKey sensor guide](https://www.digikey.com/en/resources/sensors/pressure-sensors)
 - [Basic of fluid physics](http://www.pneumaticsonline.com/BasicTraining/default.htm)
+
+### Minimum Viable Product
+
+The problem to be solved here is reducing cost without compromising on function. To reduce cost, component specifications have to be matched. The max pressure deliverable by the motor should be close to the pressure limits of the sensor. Given dozens of choices for sensors, motors and valves this is not an easy exercise. Especially, when we're aiming at a moving target specification.
+
+To make life easier, I decided to go for following minimum specifications
+* -0.5 atm to +0.5 atm pressure range,
+* two air channels
+* 2 Liter/min flow rate
+* Able to inflate and deflate a 6 inch balloon in under 30 seconds
+* Five minute setup time
+* Cross platform compatability(Win, Mac, Linux)
+* Cost under 100$/set for a production run of 5 sets
+
+### Experimentation
+
+|Item|Inner Dia Eqv|Voltage|Link|Cost per item|Remarks|
+|---|---|---|---|---|---|
+|Similk aquarium +pump|3/16"|6V|[Amazon](https://www.amazon.com/gp/product/B071FC3C9L/ref=ox_sc_act_title_3?smid=A30FBXYHCPC2G9&psc=1)|4$||
+|DIminus aquarium +pump|3/16"|6V|[Amazon](https://www.amazon.com/gp/product/B071GNFHGX/ref=ox_sc_act_title_1?smid=A1KXN55BWHRB5I&psc=1)|4.5$||
+|Medical -pump|3/16"|12V|[Amazon](https://www.amazon.com/gp/product/B01MR3JZZF/ref=ox_sc_act_title_4?smid=A3BG62S1F23IH5&psc=1)|9$||
+|Square Medical -pump|3/16"|12V|[Amazon](https://www.amazon.com/gp/product/B071GNFHGX/ref=ox_sc_act_title_1?smid=A1KXN55BWHRB5I&psc=1)|11$|Low stock|
+|Ohaha tube connectors|3/16"|N/A|[Amazon](https://www.amazon.com/gp/product/B06XHX1KWL/ref=ox_sc_act_title_1?smid=A1665Y00LA4JOM&psc=1)|8$/set of hundred connectors||
+|Aquarium -pump|3/16"|5-12V|[Amazon](https://www.amazon.com/Electric-Self-Priming-Suction-Aluminum-Diaphragm/dp/B0786CX98Q/ref=pd_day0_199_5?_encoding=UTF8&pd_rd_i=B0786CX98Q&pd_rd_r=Y0RNFT06BCCAAB1NR6KJ&pd_rd_w=0L70O&pd_rd_wg=gJkuo&psc=1&refRID=Y0RNFT06BCCAAB1NR6KJ)|10$||
+|Pink-day -pump|3/16"|12V|[Amazon](https://www.amazon.com/Pink-day-Electric-Motor-Vacuum-Booster/dp/B076VLXHYB/ref=sr_1_9?ie=UTF8&qid=1523048670&sr=8-9&keywords=vacuum+pump+mini)|5$|Slow shipping|
+|Woolf -pump|3/16"|3-6V|[Amazon](https://www.amazon.com/3V-6V-Motor-Vacuum-Aquarium-Oxygen/dp/B074PPV6QH/ref=sr_1_15?ie=UTF8&qid=1523048670&sr=8-15&keywords=vacuum+pump+mini)|4$|Slow Shipping|
+|Valve 2way|3mm|5V|[Amazon](https://www.amazon.com/gp/product/B00JR3ZQSC/ref=od_aui_detailpages00?ie=UTF8&psc=1)|7.5$||
+|Omron +-pressure sensor|3mm|Wheatstone|[DigiKey](https://www.digikey.com/product-detail/en/omron-electronics-inc-emc-div/2SMPP03/Z3639-ND/3671590)|8$||
