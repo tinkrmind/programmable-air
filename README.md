@@ -75,4 +75,5 @@ To make life easier, I decided to go for following minimum specifications
 |Pink-day -pump|3/16"|12V|[Amazon](https://www.amazon.com/Pink-day-Electric-Motor-Vacuum-Booster/dp/B076VLXHYB/ref=sr_1_9?ie=UTF8&qid=1523048670&sr=8-9&keywords=vacuum+pump+mini)|5$|Slow shipping|
 |Woolf -pump|3/16"|3-6V|[Amazon](https://www.amazon.com/3V-6V-Motor-Vacuum-Aquarium-Oxygen/dp/B074PPV6QH/ref=sr_1_15?ie=UTF8&qid=1523048670&sr=8-15&keywords=vacuum+pump+mini)|4$|Slow Shipping|
 |Valve 2way|3mm|5V|[Amazon](https://www.amazon.com/gp/product/B00JR3ZQSC/ref=od_aui_detailpages00?ie=UTF8&psc=1)|7.5$||
-|Omron +-pressure sensor|3mm|Wheatstone|[DigiKey](https://www.digikey.com/product-detail/en/omron-electronics-inc-emc-div/2SMPP03/Z3639-ND/3671590)|8$||
+|Omron +-pressure sensor|3mm|Wheatstone|[DigiKey](https://www.digikey.com/product-detail/en/omron-electronics-inc-emc-div/2SMPP03/Z3639-ND/3671590)|8$|Needs HX711 or [INA125](https://learn.adafruit.com/smart-cocktail-shaker/hardware) to work with arduino|
+|3 way valve|3/16"|12V|[Elecrow](https://www.elecrow.com/electric-2-position-3-way-12v-micro-solenoid-valve-for-gas.html)|2.5$||
