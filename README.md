@@ -77,3 +77,16 @@ To make life easier, I decided to go for following minimum specifications
 |Valve 2way|3mm|5V|[Amazon](https://www.amazon.com/gp/product/B00JR3ZQSC/ref=od_aui_detailpages00?ie=UTF8&psc=1)|7.5$||
 |Omron +-pressure sensor|3mm|Wheatstone|[DigiKey](https://www.digikey.com/product-detail/en/omron-electronics-inc-emc-div/2SMPP03/Z3639-ND/3671590)|8$|Needs HX711 or [INA125](https://learn.adafruit.com/smart-cocktail-shaker/hardware) to work with arduino|
 |3 way valve|3/16"|12V|[Elecrow](https://www.elecrow.com/electric-2-position-3-way-12v-micro-solenoid-valve-for-gas.html)|2.5$||
+
+### What can you use it for?
+
+#### Vacuum
+
+* Electronic component pick and place
+* Universal vacuum based gripper
+
+#### Inflatable
+
+* Crazy soft robots
+* Balloons!
+
