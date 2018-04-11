@@ -2,7 +2,7 @@
 
 ## Elevator Pitch
 
-![quad-chart](https://i.imgur.com/VRT51xQ.png)
+[![quad-chart](https://i.imgur.com/VRT51xQ.png)](https://docs.google.com/presentation/d/1pUnGk4v_wuCpisjBpNWZSJUyDwAFb4v1xceV4rX-Uv4/edit?usp=sharing)
 
 ### [Slideshow](https://docs.google.com/presentation/d/1pUnGk4v_wuCpisjBpNWZSJUyDwAFb4v1xceV4rX-Uv4/edit?usp=sharing)
 
