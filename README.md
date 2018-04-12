@@ -80,6 +80,10 @@ To make life easier, I decided to go for following minimum specifications
 |2 way valve|3/16"|12V|[MPJA](http://www.mpja.com/Solenoid-Valve-Normally-Closed-12VDC-Used/productinfo/33957+HD)|2.95$|Reused components. Not scalable.|
 |
 
+### Choice of pressure sensor: [2SMPP03](https://www.digikey.com/product-detail/en/omron-electronics-inc-emc-div/2SMPP03/Z3639-ND/3671590)
+
+The most expensive component in the entire setup is a pressure sensor. Since one pressure sensor is required for every pneumatic channel, the cost scales linearly with number of channels. Pressure sensors that work in <-0.5 atm to >+0.5 atm range are relatively expensive since few large industries demand such a sensor. The cheapest such sensor I could find is [2SMPP03](https://www.digikey.com/product-detail/en/omron-electronics-inc-emc-div/2SMPP03/Z3639-ND/3671590) by Omron electronics. It is priced at <7$/per unit for 5 units and while it needs additional circuitry to work, the effort is well worth it. The cheapest sensor that works standalone is atleast 30$/per unit at 5 units. The rest of the system has to be designed around this part as this has the largest cost savings associated with it.
+
 
 ### What can you use it for?
 
