@@ -73,8 +73,8 @@
 <board>
 <plain>
 <circle x="0" y="0" radius="14.02760625" width="0.1524" layer="20"/>
+<circle x="0" y="0" radius="3.81" width="0.1524" layer="20"/>
 <hole x="0" y="0" drill="7.62"/>
-<circle x="0" y="7.62" radius="1.27" width="0.1524" layer="20"/>
 </plain>
 <libraries>
 <library name="programmable-air-components">
