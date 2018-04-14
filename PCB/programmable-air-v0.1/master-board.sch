@@ -2713,6 +2713,84 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Capacitors">
+<description>&lt;h3&gt;SparkFun Capacitors&lt;/h3&gt;
+This library contains capacitors. 
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="PANASONIC_C">
+<description>&lt;b&gt;Panasonic Aluminium Electrolytic Capacitor VS-Serie Package E&lt;/b&gt;</description>
+<wire x1="-2.6" y1="2.45" x2="1.6" y2="2.45" width="0.2032" layer="21"/>
+<wire x1="1.6" y1="2.45" x2="2.7" y2="1.35" width="0.2032" layer="21"/>
+<wire x1="2.7" y1="-1.75" x2="1.6" y2="-2.85" width="0.2032" layer="21"/>
+<wire x1="1.6" y1="-2.85" x2="-2.6" y2="-2.85" width="0.2032" layer="21"/>
+<wire x1="-2.6" y1="2.45" x2="1.6" y2="2.45" width="0.1016" layer="51"/>
+<wire x1="1.6" y1="2.45" x2="2.7" y2="1.35" width="0.1016" layer="51"/>
+<wire x1="2.7" y1="-1.75" x2="1.6" y2="-2.85" width="0.1016" layer="51"/>
+<wire x1="1.6" y1="-2.85" x2="-2.6" y2="-2.85" width="0.1016" layer="51"/>
+<wire x1="-2.6" y1="2.45" x2="-2.6" y2="0.35" width="0.2032" layer="21"/>
+<wire x1="-2.6" y1="-2.85" x2="-2.6" y2="-0.75" width="0.2032" layer="21"/>
+<wire x1="2.7" y1="1.35" x2="2.7" y2="0.35" width="0.2032" layer="21"/>
+<wire x1="2.7" y1="-1.75" x2="2.7" y2="-0.7" width="0.2032" layer="21"/>
+<wire x1="-2.6" y1="2.45" x2="-2.6" y2="-2.85" width="0.1016" layer="51"/>
+<wire x1="2.7" y1="1.35" x2="2.7" y2="-1.75" width="0.1016" layer="51"/>
+<wire x1="-2.4" y1="0.35" x2="2.45" y2="0.3" width="0.2032" layer="21" curve="-156.699401"/>
+<wire x1="2.5" y1="-0.7" x2="-2.4" y2="-0.75" width="0.2032" layer="21" curve="-154.694887"/>
+<circle x="0.05" y="-0.2" radius="2.5004" width="0.1016" layer="51"/>
+<smd name="-" x="-1.8" y="-0.2" dx="2.2" dy="0.65" layer="1"/>
+<smd name="+" x="1.9" y="-0.2" dx="2.2" dy="0.65" layer="1"/>
+<text x="0" y="2.667" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.048" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="CAP_POL">
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.254" layer="94" curve="-37.878202" cap="flat"/>
+<wire x1="-2.4669" y1="-1.8504" x2="0" y2="-1.0161" width="0.254" layer="94" curve="-37.376341" cap="flat"/>
+<text x="1.016" y="0.635" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="1.016" y="-4.191" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<rectangle x1="-2.253" y1="0.668" x2="-1.364" y2="0.795" layer="94"/>
+<rectangle x1="-1.872" y1="0.287" x2="-1.745" y2="1.176" layer="94"/>
+<pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="22UF-POLAR" prefix="C">
+<description>&lt;h3&gt;22µF polarized capacitors&lt;/h3&gt;
+&lt;p&gt;A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CAP_POL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-PANASONIC_C-35V-20%" package="PANASONIC_C">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-08618"/>
+<attribute name="VALUE" value="22uF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2753,6 +2831,14 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
 <part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
 <part name="SUPPLY7" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
+<part name="C1" library="SparkFun-Capacitors" deviceset="22UF-POLAR" device="-PANASONIC_C-35V-20%" value="22uF"/>
+<part name="C2" library="SparkFun-Capacitors" deviceset="22UF-POLAR" device="-PANASONIC_C-35V-20%" value="22uF"/>
+<part name="C3" library="SparkFun-Capacitors" deviceset="22UF-POLAR" device="-PANASONIC_C-35V-20%" value="22uF"/>
+<part name="GND10" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="SUPPLY8" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
+<part name="C4" library="SparkFun-Capacitors" deviceset="22UF-POLAR" device="-PANASONIC_C-35V-20%" value="22uF"/>
+<part name="C5" library="SparkFun-Capacitors" deviceset="22UF-POLAR" device="-PANASONIC_C-35V-20%" value="22uF"/>
+<part name="C6" library="SparkFun-Capacitors" deviceset="22UF-POLAR" device="-PANASONIC_C-35V-20%" value="22uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -2781,7 +2867,7 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <instance part="GND6" gate="1" x="128.27" y="6.35"/>
 <instance part="GND7" gate="1" x="85.09" y="-22.86" rot="R270"/>
 <instance part="GND8" gate="1" x="-138.43" y="22.86" rot="R180"/>
-<instance part="GND9" gate="1" x="35.56" y="31.75"/>
+<instance part="GND9" gate="1" x="33.02" y="31.75"/>
 <instance part="SUPPLY1" gate="G$1" x="119.38" y="35.56"/>
 <instance part="SUPPLY2" gate="G$1" x="-30.48" y="36.83"/>
 <instance part="SUPPLY3" gate="G$1" x="-66.04" y="39.37"/>
@@ -2789,6 +2875,14 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <instance part="SUPPLY5" gate="G$1" x="107.95" y="-21.59"/>
 <instance part="SUPPLY6" gate="G$1" x="128.27" y="35.56"/>
 <instance part="SUPPLY7" gate="G$1" x="-127" y="-3.81"/>
+<instance part="C1" gate="G$1" x="-97.79" y="31.75"/>
+<instance part="C2" gate="G$1" x="-105.41" y="31.75"/>
+<instance part="C3" gate="G$1" x="-114.3" y="31.75"/>
+<instance part="GND10" gate="1" x="-105.41" y="22.86"/>
+<instance part="SUPPLY8" gate="G$1" x="-105.41" y="36.83"/>
+<instance part="C4" gate="G$1" x="-40.64" y="-8.89"/>
+<instance part="C5" gate="G$1" x="-121.92" y="31.75"/>
+<instance part="C6" gate="G$1" x="-90.17" y="31.75"/>
 </instances>
 <busses>
 </busses>
@@ -2873,6 +2967,8 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <pinref part="GND4" gate="1" pin="GND"/>
 <pinref part="ARDUINO_NANO1" gate="G$1" pin="GND@2"/>
 <wire x1="-21.59" y1="-13.97" x2="-26.67" y2="-13.97" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="-"/>
+<wire x1="-40.64" y1="-13.97" x2="-26.67" y2="-13.97" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J4" gate="G$1" pin="8"/>
@@ -2899,9 +2995,31 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <wire x1="128.27" y1="11.43" x2="130.81" y2="11.43" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="PWR"/>
-<wire x1="35.56" y1="39.37" x2="35.56" y2="34.29" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="GNDBREAK"/>
+<wire x1="33.02" y1="39.37" x2="33.02" y2="36.83" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="36.83" x2="30.48" y2="36.83" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="GND"/>
+<wire x1="30.48" y1="39.37" x2="30.48" y2="36.83" width="0.1524" layer="91"/>
 <pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="33.02" y1="34.29" x2="33.02" y2="36.83" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C3" gate="G$1" pin="-"/>
+<wire x1="-114.3" y1="26.67" x2="-114.3" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-114.3" y1="25.4" x2="-105.41" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="-"/>
+<wire x1="-105.41" y1="25.4" x2="-105.41" y2="26.67" width="0.1524" layer="91"/>
+<wire x1="-105.41" y1="25.4" x2="-97.79" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="-"/>
+<wire x1="-97.79" y1="25.4" x2="-97.79" y2="26.67" width="0.1524" layer="91"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+<junction x="-105.41" y="25.4"/>
+<pinref part="C5" gate="G$1" pin="-"/>
+<wire x1="-114.3" y1="25.4" x2="-121.92" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-121.92" y1="25.4" x2="-121.92" y2="26.67" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="-"/>
+<wire x1="-90.17" y1="26.67" x2="-90.17" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-90.17" y1="25.4" x2="-97.79" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -3055,16 +3173,12 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <segment>
 <pinref part="ARDUINO_NANO1" gate="G$1" pin="VIN"/>
 <wire x1="-21.59" y1="-16.51" x2="-30.48" y2="-16.51" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="GNDBREAK"/>
-<wire x1="33.02" y1="39.37" x2="33.02" y2="36.83" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="36.83" x2="30.48" y2="36.83" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="GND"/>
-<wire x1="30.48" y1="39.37" x2="30.48" y2="36.83" width="0.1524" layer="91"/>
-<wire x1="-30.48" y1="-16.51" x2="-30.48" y2="36.83" width="0.1524" layer="91"/>
-<wire x1="-30.48" y1="36.83" x2="30.48" y2="36.83" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="-16.51" x2="-30.48" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="G$1" pin="VIN"/>
-<junction x="-30.48" y="36.83"/>
-<junction x="30.48" y="36.83"/>
+<pinref part="J1" gate="G$1" pin="PWR"/>
+<wire x1="-30.48" y1="35.56" x2="-30.48" y2="36.83" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="39.37" x2="35.56" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="35.56" x2="-30.48" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J5" gate="G$1" pin="1"/>
@@ -3100,6 +3214,24 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <pinref part="J3" gate="G$1" pin="1"/>
 <pinref part="SUPPLY5" gate="G$1" pin="VIN"/>
 <wire x1="107.95" y1="-25.4" x2="107.95" y2="-21.59" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C1" gate="G$1" pin="+"/>
+<wire x1="-97.79" y1="34.29" x2="-97.79" y2="36.83" width="0.1524" layer="91"/>
+<wire x1="-97.79" y1="36.83" x2="-105.41" y2="36.83" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="+"/>
+<wire x1="-105.41" y1="36.83" x2="-105.41" y2="34.29" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="+"/>
+<wire x1="-114.3" y1="36.83" x2="-114.3" y2="34.29" width="0.1524" layer="91"/>
+<pinref part="SUPPLY8" gate="G$1" pin="VIN"/>
+<junction x="-105.41" y="36.83"/>
+<pinref part="C5" gate="G$1" pin="+"/>
+<wire x1="-121.92" y1="34.29" x2="-121.92" y2="36.83" width="0.1524" layer="91"/>
+<wire x1="-121.92" y1="36.83" x2="-114.3" y2="36.83" width="0.1524" layer="91"/>
+<wire x1="-114.3" y1="36.83" x2="-105.41" y2="36.83" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="+"/>
+<wire x1="-97.79" y1="36.83" x2="-90.17" y2="36.83" width="0.1524" layer="91"/>
+<wire x1="-90.17" y1="36.83" x2="-90.17" y2="34.29" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -3143,6 +3275,16 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <wire x1="19.05" y1="3.81" x2="105.41" y2="3.81" width="0.1524" layer="91"/>
 <pinref part="J3" gate="G$1" pin="2"/>
 <wire x1="105.41" y1="-25.4" x2="105.41" y2="3.81" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="ARDUINO_NANO1" gate="G$1" pin="5V"/>
+<wire x1="-21.59" y1="-8.89" x2="-38.1" y2="-8.89" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="-8.89" x2="-38.1" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="-5.08" x2="-40.64" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="+"/>
+<wire x1="-40.64" y1="-5.08" x2="-40.64" y2="-6.35" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

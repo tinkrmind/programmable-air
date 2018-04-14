@@ -150,7 +150,6 @@
 <description>&lt;b&gt;Arduino Nano V3.0 Module&lt;/b&gt;
 
 &lt;p&gt;The Nano was designed and is being produced by &lt;a href="http://www.gravitech.us/arna30wiatp.html"&gt;Gravitech&lt;/a&gt;.&lt;/p&gt;&lt;br&gt;</description>
-<hole x="-22.86" y="-7.62" drill="1.778"/>
 <pad name="1" x="-20.32" y="-7.62" drill="0.8" shape="square"/>
 <pad name="2" x="-17.78" y="-7.62" drill="0.8"/>
 <pad name="3" x="-15.24" y="-7.62" drill="0.8"/>
@@ -181,9 +180,6 @@
 <pad name="28" x="-15.24" y="7.62" drill="0.8"/>
 <pad name="29" x="-17.78" y="7.62" drill="0.8"/>
 <pad name="30" x="-20.32" y="7.62" drill="0.8"/>
-<hole x="-22.86" y="7.62" drill="1.778"/>
-<hole x="17.78" y="7.62" drill="1.778"/>
-<hole x="17.78" y="-7.62" drill="1.778"/>
 <wire x1="-24.13" y1="8.89" x2="17.78" y2="8.89" width="0.127" layer="21"/>
 <wire x1="17.78" y1="8.89" x2="19.05" y2="8.89" width="0.127" layer="21"/>
 <wire x1="19.05" y1="8.89" x2="19.05" y2="7.62" width="0.127" layer="21"/>
@@ -234,13 +230,8 @@ USB</text>
 <text x="-22.86" y="-1.27" size="0.0508" layer="21" font="vector" ratio="1" rot="R90">This library was created by Esp. Marco-Luis SALCEDO TOVAR.
 Please report any errors or suggestions to: YV1HX@CANTV.NET
 Thanks you!!!</text>
-<wire x1="-24.13" y1="7.62" x2="-21.59" y2="7.62" width="0.015875" layer="21"/>
-<wire x1="-22.86" y1="8.89" x2="-22.86" y2="6.35" width="0.015875" layer="21"/>
 <wire x1="-24.13" y1="-7.62" x2="-21.59" y2="-7.62" width="0.015875" layer="21"/>
-<wire x1="-22.86" y1="-6.35" x2="-22.86" y2="-8.89" width="0.015875" layer="21"/>
-<wire x1="17.78" y1="-8.89" x2="17.78" y2="-6.35" width="0.015875" layer="21"/>
 <wire x1="16.51" y1="-7.62" x2="19.05" y2="-7.62" width="0.015875" layer="21"/>
-<wire x1="17.78" y1="6.35" x2="17.78" y2="8.89" width="0.015875" layer="21"/>
 <wire x1="16.51" y1="7.62" x2="19.05" y2="7.62" width="0.015875" layer="21"/>
 </package>
 </packages>
@@ -2842,14 +2833,6 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <wire x1="58.42" y1="31.75" x2="53.34" y2="31.75" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="43.18" y1="31.75" x2="43.18" y2="19.05" width="0.1524" layer="91"/>
-<pinref part="ARDUINO_NANO1" gate="G$1" pin="D12/MISO"/>
-<wire x1="19.05" y1="19.05" x2="43.18" y2="19.05" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
@@ -2995,71 +2978,47 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <segment>
 <pinref part="J4" gate="G$1" pin="4"/>
 <wire x1="-52.07" y1="41.91" x2="-52.07" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="-52.07" y1="33.02" x2="2.54" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="33.02" x2="2.54" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="ARDUINO_NANO1" gate="G$1" pin="D11/MOSI"/>
-<wire x1="19.05" y1="16.51" x2="19.05" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="19.05" y1="17.78" x2="2.54" y2="17.78" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$19" class="0">
-<segment>
-<pinref part="ARDUINO_NANO1" gate="G$1" pin="D4/T0"/>
-<wire x1="19.05" y1="-1.27" x2="100.33" y2="-1.27" width="0.1524" layer="91"/>
-<pinref part="J3" gate="G$1" pin="4"/>
-<wire x1="100.33" y1="-1.27" x2="100.33" y2="-25.4" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$20" class="0">
-<segment>
-<pinref part="J3" gate="G$1" pin="3"/>
-<wire x1="102.87" y1="-25.4" x2="102.87" y2="1.27" width="0.1524" layer="91"/>
-<pinref part="ARDUINO_NANO1" gate="G$1" pin="D5/T1"/>
-<wire x1="102.87" y1="1.27" x2="19.05" y2="1.27" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="ARDUINO_NANO1" gate="G$1" pin="D6/AIN0"/>
-<wire x1="19.05" y1="3.81" x2="105.41" y2="3.81" width="0.1524" layer="91"/>
-<pinref part="J3" gate="G$1" pin="2"/>
-<wire x1="105.41" y1="3.81" x2="105.41" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="-52.07" y1="33.02" x2="19.05" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="ARDUINO_NANO1" gate="G$1" pin="D12/MISO"/>
+<wire x1="19.05" y1="33.02" x2="19.05" y2="19.05" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
-<pinref part="ARDUINO_NANO1" gate="G$1" pin="D7/AIN1"/>
-<wire x1="19.05" y1="6.35" x2="125.73" y2="6.35" width="0.1524" layer="91"/>
-<wire x1="125.73" y1="6.35" x2="125.73" y2="16.51" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="6"/>
-<wire x1="125.73" y1="16.51" x2="130.81" y2="16.51" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="16.51" x2="130.81" y2="16.51" width="0.1524" layer="91"/>
+<pinref part="ARDUINO_NANO1" gate="G$1" pin="D8/CLK0"/>
+<wire x1="19.05" y1="8.89" x2="124.46" y2="8.89" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="8.89" x2="124.46" y2="16.51" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="4"/>
 <wire x1="130.81" y1="21.59" x2="113.03" y2="21.59" width="0.1524" layer="91"/>
-<wire x1="113.03" y1="21.59" x2="113.03" y2="8.89" width="0.1524" layer="91"/>
-<pinref part="ARDUINO_NANO1" gate="G$1" pin="D8/CLK0"/>
-<wire x1="113.03" y1="8.89" x2="19.05" y2="8.89" width="0.1524" layer="91"/>
+<wire x1="113.03" y1="21.59" x2="113.03" y2="11.43" width="0.1524" layer="91"/>
+<wire x1="113.03" y1="11.43" x2="19.05" y2="11.43" width="0.1524" layer="91"/>
+<pinref part="ARDUINO_NANO1" gate="G$1" pin="D9/OC1A"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
-<pinref part="ARDUINO_NANO1" gate="G$1" pin="D9/OC1A"/>
-<wire x1="19.05" y1="11.43" x2="110.49" y2="11.43" width="0.1524" layer="91"/>
-<wire x1="110.49" y1="11.43" x2="110.49" y2="24.13" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="3"/>
 <wire x1="110.49" y1="24.13" x2="130.81" y2="24.13" width="0.1524" layer="91"/>
+<pinref part="ARDUINO_NANO1" gate="G$1" pin="D10/OC1B/!SS"/>
+<wire x1="19.05" y1="13.97" x2="110.49" y2="13.97" width="0.1524" layer="91"/>
+<wire x1="110.49" y1="13.97" x2="110.49" y2="24.13" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$25" class="0">
 <segment>
-<pinref part="ARDUINO_NANO1" gate="G$1" pin="D10/OC1B/!SS"/>
-<wire x1="19.05" y1="13.97" x2="107.95" y2="13.97" width="0.1524" layer="91"/>
-<wire x1="107.95" y1="13.97" x2="107.95" y2="26.67" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="2"/>
 <wire x1="107.95" y1="26.67" x2="130.81" y2="26.67" width="0.1524" layer="91"/>
+<pinref part="ARDUINO_NANO1" gate="G$1" pin="D11/MOSI"/>
+<wire x1="19.05" y1="16.51" x2="62.23" y2="16.51" width="0.1524" layer="91"/>
+<wire x1="62.23" y1="16.51" x2="62.23" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="62.23" y1="15.24" x2="107.95" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="107.95" y1="15.24" x2="107.95" y2="26.67" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -3152,6 +3111,38 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <pinref part="J4" gate="G$1" pin="3"/>
 <wire x1="-54.61" y1="41.91" x2="-54.61" y2="31.75" width="0.1524" layer="91"/>
 <wire x1="1.27" y1="-2.54" x2="1.27" y2="31.75" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="ARDUINO_NANO1" gate="G$1" pin="D7/AIN1"/>
+<wire x1="19.05" y1="6.35" x2="43.18" y2="6.35" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="43.18" y1="6.35" x2="43.18" y2="31.75" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="ARDUINO_NANO1" gate="G$1" pin="D4/T0"/>
+<pinref part="J3" gate="G$1" pin="4"/>
+<wire x1="19.05" y1="-1.27" x2="100.33" y2="-1.27" width="0.1524" layer="91"/>
+<wire x1="100.33" y1="-1.27" x2="100.33" y2="-25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="J3" gate="G$1" pin="3"/>
+<wire x1="102.87" y1="-25.4" x2="102.87" y2="1.27" width="0.1524" layer="91"/>
+<pinref part="ARDUINO_NANO1" gate="G$1" pin="D5/T1"/>
+<wire x1="102.87" y1="1.27" x2="19.05" y2="1.27" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="ARDUINO_NANO1" gate="G$1" pin="D6/AIN0"/>
+<wire x1="19.05" y1="3.81" x2="105.41" y2="3.81" width="0.1524" layer="91"/>
+<pinref part="J3" gate="G$1" pin="2"/>
+<wire x1="105.41" y1="-25.4" x2="105.41" y2="3.81" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
