@@ -147,6 +147,15 @@
 <smd name="P$5" x="4.445" y="0" dx="2.286" dy="0.6096" layer="16"/>
 <smd name="P$6" x="4.445" y="1.27" dx="2.286" dy="0.6096" layer="16"/>
 </package>
+<package name="TO220">
+<pad name="P$1" x="-2.54" y="0" drill="1.5748" diameter="2.1844" shape="square"/>
+<pad name="P$2" x="0" y="0" drill="1.5748" diameter="2.1844"/>
+<pad name="P$3" x="2.54" y="0" drill="1.5748" diameter="2.1844"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-2.54" x2="5.08" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="2.54" width="0.127" layer="21"/>
+<wire x1="5.08" y1="2.54" x2="-5.08" y2="2.54" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="A5F083">
@@ -197,6 +206,27 @@
 <wire x1="-3.81" y1="-2.54" x2="3.81" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="3.81" y1="-2.54" x2="3.81" y2="2.54" width="0.254" layer="94"/>
 <wire x1="3.81" y1="2.54" x2="-3.81" y2="2.54" width="0.254" layer="94"/>
+</symbol>
+<symbol name="TIP120">
+<pin name="B" x="-2.54" y="0" length="point" rot="R180"/>
+<pin name="C" x="2.54" y="5.08" length="point"/>
+<pin name="E" x="2.54" y="-5.08" length="point"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<polygon width="0.127" layer="94">
+<vertex x="-0.254" y="2.032"/>
+<vertex x="0.254" y="2.032"/>
+<vertex x="0.254" y="-2.032"/>
+<vertex x="-0.254" y="-2.032"/>
+</polygon>
+<polygon width="0.127" layer="94">
+<vertex x="2.54" y="-2.54"/>
+<vertex x="1.524" y="-2.54"/>
+<vertex x="2.032" y="-1.778"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>
@@ -284,6 +314,43 @@
 <connect gate="G$1" pin="GND" pad="P$8"/>
 <connect gate="G$1" pin="SCK" pad="P$9"/>
 <connect gate="G$1" pin="VCC" pad="P$10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="2SMPP-03">
+<gates>
+<gate name="G$1" symbol="2SMPP-03" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2SMPP-03">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+<connect gate="G$1" pin="5" pad="P$5"/>
+<connect gate="G$1" pin="6" pad="P$6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TIP120-TO220">
+<gates>
+<gate name="G$1" symbol="TIP120" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO220">
+<connects>
+<connect gate="G$1" pin="B" pad="P$1"/>
+<connect gate="G$1" pin="C" pad="P$2"/>
+<connect gate="G$1" pin="E" pad="P$3"/>
 </connects>
 <technologies>
 <technology name=""/>
