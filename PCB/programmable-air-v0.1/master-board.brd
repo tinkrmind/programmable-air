@@ -1348,9 +1348,9 @@ design rules under a new name.</description>
 <wire x1="9.5504" y1="43.7896" x2="9.5504" y2="43.67144375" width="1.27" layer="16"/>
 <wire x1="9.5504" y1="43.67144375" x2="10.16" y2="43.06184375" width="1.27" layer="16"/>
 <wire x1="10.16" y1="43.06184375" x2="10.16" y2="37.465" width="1.27" layer="16"/>
-<wire x1="6.35" y1="24.13" x2="7.202896875" y2="24.13" width="2.54" layer="16"/>
-<wire x1="7.202896875" y1="24.13" x2="8.99895" y2="24.87395" width="2.54" layer="16" curve="45.00005"/>
 <wire x1="8.99895" y1="24.87395" x2="10.16" y2="26.035" width="2.54" layer="16"/>
+<wire x1="10.16" y1="26.035" x2="8.255" y2="24.13" width="1.27" layer="16"/>
+<wire x1="8.255" y1="24.13" x2="6.35" y2="24.13" width="1.27" layer="16"/>
 </signal>
 <signal name="N$8">
 <contactref element="ARDUINO_NANO1" pad="21"/>
