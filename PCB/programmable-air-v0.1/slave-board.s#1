@@ -1953,6 +1953,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-13.97" y1="-3.81" x2="-13.97" y2="0" width="0.1524" layer="91"/>
 <wire x1="-13.97" y1="0" x2="-26.67" y2="0" width="0.1524" layer="91"/>
 <wire x1="-26.67" y1="0" x2="-26.67" y2="25.4" width="0.1524" layer="91"/>
+<junction x="-26.67" y="25.4"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -1966,6 +1967,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-29.21" y1="-2.54" x2="-16.51" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="-16.51" y1="-2.54" x2="-16.51" y2="-16.51" width="0.1524" layer="91"/>
+<junction x="-29.21" y="25.4"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -1979,6 +1981,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-49.53" y1="-16.51" x2="-49.53" y2="6.35" width="0.1524" layer="91"/>
 <wire x1="-49.53" y1="6.35" x2="-31.75" y2="6.35" width="0.1524" layer="91"/>
 <wire x1="-31.75" y1="6.35" x2="-31.75" y2="25.4" width="0.1524" layer="91"/>
+<junction x="-31.75" y="25.4"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -1991,6 +1994,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U$1" gate="G$1" pin="SCK"/>
 <wire x1="-34.29" y1="25.4" x2="-34.29" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="-34.29" y1="15.24" x2="-15.24" y2="15.24" width="0.1524" layer="91"/>
+<junction x="-34.29" y="25.4"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -2003,6 +2007,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U$1" gate="G$1" pin="DT"/>
 <wire x1="-15.24" y1="12.7" x2="-36.83" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="-36.83" y1="12.7" x2="-36.83" y2="25.4" width="0.1524" layer="91"/>
+<junction x="-36.83" y="25.4"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -2019,6 +2024,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-39.37" y1="34.29" x2="-58.42" y2="34.29" width="0.1524" layer="91"/>
 <wire x1="-58.42" y1="34.29" x2="-58.42" y2="16.51" width="0.1524" layer="91"/>
 <junction x="-39.37" y="34.29"/>
+<junction x="-39.37" y="25.4"/>
 </segment>
 </net>
 <net name="VIN" class="0">

@@ -1879,9 +1879,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND2" gate="1" x="-48.26" y="27.94"/>
 <instance part="GND3" gate="1" x="-15.24" y="6.35"/>
 <instance part="U$8" gate="G$1" x="20.32" y="7.62" rot="R270"/>
-<instance part="C1" gate="G$1" x="-66.04" y="13.97"/>
+<instance part="C1" gate="G$1" x="-58.42" y="13.97"/>
 <instance part="C2" gate="G$1" x="55.88" y="13.97"/>
-<instance part="GND4" gate="1" x="-66.04" y="3.81"/>
+<instance part="GND4" gate="1" x="-58.42" y="3.81"/>
 <instance part="GND5" gate="1" x="55.88" y="3.81"/>
 </instances>
 <busses>
@@ -2020,8 +2020,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-39.37" y1="25.4" x2="-39.37" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="-39.37" y1="17.78" x2="-15.24" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="+"/>
-<wire x1="-39.37" y1="34.29" x2="-66.04" y2="34.29" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="34.29" x2="-66.04" y2="16.51" width="0.1524" layer="91"/>
+<wire x1="-39.37" y1="34.29" x2="-58.42" y2="34.29" width="0.1524" layer="91"/>
+<wire x1="-58.42" y1="34.29" x2="-58.42" y2="16.51" width="0.1524" layer="91"/>
 <junction x="-39.37" y="34.29"/>
 </segment>
 </net>
@@ -2102,7 +2102,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="C1" gate="G$1" pin="-"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="-66.04" y1="8.89" x2="-66.04" y2="6.35" width="0.1524" layer="91"/>
+<wire x1="-58.42" y1="8.89" x2="-58.42" y2="6.35" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
