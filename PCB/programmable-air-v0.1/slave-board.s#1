@@ -198,6 +198,15 @@
 <wire x1="-1.27" y1="-1.27" x2="-1.27" y2="1.27" width="0.127" layer="21"/>
 <wire x1="-1.27" y1="1.27" x2="1.27" y2="0" width="0.127" layer="21"/>
 </package>
+<package name="2SMPP-03">
+<hole x="0" y="0" drill="4.064"/>
+<smd name="P$1" x="-4.445" y="1.27" dx="2.286" dy="0.6096" layer="16"/>
+<smd name="P$2" x="-4.445" y="0" dx="2.286" dy="0.6096" layer="16"/>
+<smd name="P$3" x="-4.445" y="-1.27" dx="2.286" dy="0.6096" layer="16"/>
+<smd name="P$4" x="4.445" y="-1.27" dx="2.286" dy="0.6096" layer="16"/>
+<smd name="P$5" x="4.445" y="0" dx="2.286" dy="0.6096" layer="16"/>
+<smd name="P$6" x="4.445" y="1.27" dx="2.286" dy="0.6096" layer="16"/>
+</package>
 </packages>
 <symbols>
 <symbol name="HX711">
@@ -231,6 +240,18 @@
 <wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
 <wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
 <wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+</symbol>
+<symbol name="2SMPP-03">
+<pin name="1" x="-6.35" y="1.27" length="short"/>
+<pin name="2" x="-6.35" y="0" length="short"/>
+<pin name="3" x="-6.35" y="-1.27" length="short"/>
+<pin name="4" x="6.35" y="-1.27" length="short" rot="R180"/>
+<pin name="5" x="6.35" y="0" length="short" rot="R180"/>
+<pin name="6" x="6.35" y="1.27" length="short" rot="R180"/>
+<wire x1="-3.81" y1="2.54" x2="-3.81" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-2.54" x2="3.81" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-2.54" x2="3.81" y2="2.54" width="0.254" layer="94"/>
+<wire x1="3.81" y1="2.54" x2="-3.81" y2="2.54" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -284,6 +305,26 @@
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="2SMPP-03">
+<gates>
+<gate name="G$1" symbol="2SMPP-03" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2SMPP-03">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+<connect gate="G$1" pin="5" pad="P$5"/>
+<connect gate="G$1" pin="6" pad="P$6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1726,6 +1767,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
+<part name="U$8" library="programmable-air-components" deviceset="2SMPP-03" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1756,6 +1798,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND2" gate="1" x="48.26" y="10.16"/>
 <instance part="GND3" gate="1" x="-15.24" y="6.35"/>
 <instance part="SUPPLY2" gate="G$1" x="-15.24" y="20.32"/>
+<instance part="U$8" gate="G$1" x="20.32" y="7.62" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -1928,6 +1971,46 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U$1" gate="G$1" pin="GND"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="-15.24" y1="10.16" x2="-15.24" y2="8.89" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="U$8" gate="G$1" pin="1"/>
+<pinref part="U$1" gate="G$1" pin="B+"/>
+<wire x1="21.59" y1="13.97" x2="21.59" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="21.59" y1="20.32" x2="15.24" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="B-"/>
+<wire x1="15.24" y1="17.78" x2="17.78" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="17.78" x2="17.78" y2="1.27" width="0.1524" layer="91"/>
+<pinref part="U$8" gate="G$1" pin="4"/>
+<wire x1="17.78" y1="1.27" x2="19.05" y2="1.27" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="E-"/>
+<wire x1="15.24" y1="10.16" x2="16.51" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="16.51" y1="10.16" x2="16.51" y2="0" width="0.1524" layer="91"/>
+<wire x1="16.51" y1="0" x2="21.59" y2="0" width="0.1524" layer="91"/>
+<pinref part="U$8" gate="G$1" pin="6"/>
+<wire x1="21.59" y1="0" x2="21.59" y2="1.27" width="0.1524" layer="91"/>
+<pinref part="U$8" gate="G$1" pin="5"/>
+<wire x1="20.32" y1="1.27" x2="21.59" y2="1.27" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="U$8" gate="G$1" pin="3"/>
+<wire x1="19.05" y1="13.97" x2="19.05" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="19.05" y1="7.62" x2="24.13" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="24.13" y1="7.62" x2="24.13" y2="-1.27" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="E+"/>
+<wire x1="24.13" y1="-1.27" x2="15.24" y2="-1.27" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="-1.27" x2="15.24" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

@@ -3148,6 +3148,17 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="202,1,19.05,-11.43,ARDUINO_NANO1,!RESET,,,,"/>
+<approved hash="202,1,-21.59,13.97,ARDUINO_NANO1,AREF,,,,"/>
+<approved hash="204,1,-21.59,-8.89,ARDUINO_NANO1,5V,,,,"/>
+<approved hash="202,1,-21.59,-11.43,ARDUINO_NANO1,!RESET,,,,"/>
+<approved hash="113,1,-1.27,4.04283,ARDUINO_NANO1,,,,,"/>
+<approved hash="113,1,134.027,18.8874,J2,,,,,"/>
+<approved hash="113,1,97.6274,-28.6173,J3,,,,,"/>
+<approved hash="113,1,-49.3674,45.1273,J4,,,,,"/>
+<approved hash="113,1,-144.187,10.3226,J5,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>

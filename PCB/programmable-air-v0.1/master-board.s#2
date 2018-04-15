@@ -2747,7 +2747,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="U$5" gate="G$1" x="60.96" y="31.75"/>
 <instance part="U$6" gate="G$1" x="-68.58" y="-13.97" rot="MR0"/>
 <instance part="U$3" gate="G$1" x="-102.87" y="-27.94" rot="R180"/>
-<instance part="U$4" gate="G$1" x="99.06" y="39.37"/>
+<instance part="U$4" gate="G$1" x="97.79" y="39.37"/>
 </instances>
 <busses>
 </busses>
@@ -2780,7 +2780,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="63.5" y1="39.37" x2="63.5" y2="36.83" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="C"/>
 <pinref part="U$4" gate="G$1" pin="P$2"/>
-<wire x1="78.74" y1="39.37" x2="96.52" y2="39.37" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="39.37" x2="95.25" y2="39.37" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -3068,6 +3068,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="100.33" y1="39.37" x2="116.84" y2="39.37" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="39.37" x2="116.84" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="33.02" x2="119.38" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
 <pinref part="SUPPLY6" gate="G$1" pin="VIN"/>
