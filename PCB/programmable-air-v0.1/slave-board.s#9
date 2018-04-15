@@ -262,14 +262,14 @@
 <devices>
 <device name="" package="HX711">
 <connects>
-<connect gate="G$1" pin="A+" pad="P$1"/>
-<connect gate="G$1" pin="A-" pad="P$2"/>
-<connect gate="G$1" pin="B+" pad="P$3"/>
-<connect gate="G$1" pin="B-" pad="P$4"/>
-<connect gate="G$1" pin="DT" pad="P$5"/>
-<connect gate="G$1" pin="E+" pad="P$6"/>
-<connect gate="G$1" pin="E-" pad="P$7"/>
-<connect gate="G$1" pin="GND" pad="P$8"/>
+<connect gate="G$1" pin="A+" pad="P$4"/>
+<connect gate="G$1" pin="A-" pad="P$3"/>
+<connect gate="G$1" pin="B+" pad="P$6"/>
+<connect gate="G$1" pin="B-" pad="P$5"/>
+<connect gate="G$1" pin="DT" pad="P$8"/>
+<connect gate="G$1" pin="E+" pad="P$1"/>
+<connect gate="G$1" pin="E-" pad="P$2"/>
+<connect gate="G$1" pin="GND" pad="P$7"/>
 <connect gate="G$1" pin="SCK" pad="P$9"/>
 <connect gate="G$1" pin="VCC" pad="P$10"/>
 </connects>

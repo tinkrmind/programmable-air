@@ -1853,10 +1853,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <sheets>
 <sheet>
 <plain>
-<wire x1="-50.8" y1="25.4" x2="-50.8" y2="-25.4" width="0.1524" layer="94"/>
-<wire x1="-50.8" y1="-25.4" x2="50.8" y2="-25.4" width="0.1524" layer="94"/>
-<wire x1="50.8" y1="-25.4" x2="50.8" y2="25.4" width="0.1524" layer="94"/>
-<wire x1="50.8" y1="25.4" x2="-50.8" y2="25.4" width="0.1524" layer="94"/>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="0" y="15.24" rot="R180"/>

@@ -222,6 +222,12 @@
 <vertex x="0.762" y="-5.08"/>
 <vertex x="2.54" y="-5.08"/>
 </polygon>
+<polygon width="0.254" layer="94">
+<vertex x="-3.302" y="3.556"/>
+<vertex x="-1.778" y="3.556"/>
+<vertex x="-1.778" y="-3.556"/>
+<vertex x="-3.302" y="-3.556"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>

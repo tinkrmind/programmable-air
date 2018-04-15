@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -200,12 +200,12 @@
 </package>
 <package name="2SMPP-03">
 <hole x="0" y="0" drill="4.064"/>
-<smd name="P$1" x="-4.445" y="1.27" dx="2.286" dy="0.6096" layer="16"/>
-<smd name="P$2" x="-4.445" y="0" dx="2.286" dy="0.6096" layer="16"/>
-<smd name="P$3" x="-4.445" y="-1.27" dx="2.286" dy="0.6096" layer="16"/>
-<smd name="P$4" x="4.445" y="-1.27" dx="2.286" dy="0.6096" layer="16"/>
-<smd name="P$5" x="4.445" y="0" dx="2.286" dy="0.6096" layer="16"/>
-<smd name="P$6" x="4.445" y="1.27" dx="2.286" dy="0.6096" layer="16"/>
+<smd name="P$1" x="4.445" y="1.27" dx="2.286" dy="0.6096" layer="16"/>
+<smd name="P$2" x="4.445" y="0" dx="2.286" dy="0.6096" layer="16"/>
+<smd name="P$3" x="4.445" y="-1.27" dx="2.286" dy="0.6096" layer="16"/>
+<smd name="P$4" x="-4.445" y="-1.27" dx="2.286" dy="0.6096" layer="16"/>
+<smd name="P$5" x="-4.445" y="0" dx="2.286" dy="0.6096" layer="16"/>
+<smd name="P$6" x="-4.445" y="1.27" dx="2.286" dy="0.6096" layer="16"/>
 </package>
 </packages>
 <symbols>
