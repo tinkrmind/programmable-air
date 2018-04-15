@@ -1165,8 +1165,12 @@ design rules under a new name.</description>
 <contactref element="ARDUINO_NANO1" pad="11"/>
 <contactref element="J3" pad="6"/>
 <wire x1="80.01" y1="6.35" x2="78.105" y2="8.255" width="0.508" layer="16"/>
-<wire x1="55.245" y1="8.255" x2="43.18" y2="20.32" width="0" layer="19" extent="1-16"/>
-<wire x1="78.105" y1="8.255" x2="55.245" y2="8.255" width="0.508" layer="16"/>
+<wire x1="55.245" y1="8.255" x2="78.105" y2="8.255" width="0.508" layer="16"/>
+<wire x1="47.61600625" y1="19.2913" x2="48.5013" y2="18.40600625" width="0.508" layer="16"/>
+<wire x1="48.5013" y1="14.9987" x2="55.245" y2="8.255" width="0.508" layer="16"/>
+<wire x1="48.5013" y1="18.40600625" x2="48.5013" y2="14.9987" width="0.508" layer="16"/>
+<wire x1="43.18" y1="20.32" x2="44.2087" y2="19.2913" width="0.508" layer="16"/>
+<wire x1="44.2087" y1="19.2913" x2="47.61600625" y2="19.2913" width="0.508" layer="16"/>
 </signal>
 <signal name="N$16">
 <contactref element="J4" pad="2"/>
@@ -1344,9 +1348,9 @@ design rules under a new name.</description>
 <wire x1="9.5504" y1="43.7896" x2="9.5504" y2="43.67144375" width="1.27" layer="16"/>
 <wire x1="9.5504" y1="43.67144375" x2="10.16" y2="43.06184375" width="1.27" layer="16"/>
 <wire x1="10.16" y1="43.06184375" x2="10.16" y2="37.465" width="1.27" layer="16"/>
-<wire x1="6.35" y1="24.13" x2="7.202896875" y2="24.13" width="2.54" layer="16"/>
-<wire x1="7.202896875" y1="24.13" x2="8.99895" y2="24.87395" width="2.54" layer="16" curve="45.00005"/>
 <wire x1="8.99895" y1="24.87395" x2="10.16" y2="26.035" width="2.54" layer="16"/>
+<wire x1="6.35" y1="24.13" x2="8.255" y2="24.13" width="1.27" layer="16"/>
+<wire x1="8.255" y1="24.13" x2="10.16" y2="26.035" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$8">
 <contactref element="ARDUINO_NANO1" pad="21"/>

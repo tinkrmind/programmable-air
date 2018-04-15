@@ -802,10 +802,10 @@ design rules under a new name.</description>
 <contactref element="U$5" pad="P$1"/>
 <contactref element="U$6" pad="P$1"/>
 <contactref element="U$7" pad="P$1"/>
+<contactref element="C2" pad="+"/>
 <wire x1="7.62" y1="13.97" x2="13.4112" y2="13.97" width="1.016" layer="16"/>
 <wire x1="44.45" y1="13.97" x2="50.2412" y2="13.97" width="1.016" layer="16"/>
 <wire x1="78.74" y1="13.97" x2="84.5312" y2="13.97" width="1.016" layer="16"/>
-<contactref element="C2" pad="+"/>
 <wire x1="84.5312" y1="13.97" x2="92.71" y2="40.64" width="0" layer="19" extent="16-16"/>
 <wire x1="50.2412" y1="13.97" x2="78.74" y2="13.97" width="0" layer="19" extent="16-16"/>
 <wire x1="13.4112" y1="13.97" x2="44.45" y2="13.97" width="0" layer="19" extent="16-16"/>
