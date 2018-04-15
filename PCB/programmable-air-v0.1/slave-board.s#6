@@ -2063,6 +2063,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="-48.26" y="-8.89"/>
 <junction x="17.78" y="-7.62"/>
 <junction x="-15.24" y="-8.89"/>
+<junction x="43.18" y="26.67"/>
 </segment>
 </net>
 <net name="GND" class="0">
