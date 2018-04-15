@@ -1161,7 +1161,7 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <wire x1="50.8" y1="25.4" x2="-50.8" y2="25.4" width="0.1524" layer="94"/>
 </plain>
 <instances>
-<instance part="U$1" gate="G$1" x="0" y="12.7"/>
+<instance part="U$1" gate="G$1" x="0" y="11.43"/>
 <instance part="U$2" gate="G$1" x="-33.02" y="-10.16"/>
 <instance part="U$3" gate="G$1" x="0" y="-10.16"/>
 <instance part="U$4" gate="G$1" x="33.02" y="-10.16"/>
