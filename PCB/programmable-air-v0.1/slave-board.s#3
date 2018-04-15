@@ -1675,15 +1675,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="U$4" gate="G$1" x="33.02" y="-10.16"/>
 <instance part="J1" gate="G$1" x="-31.75" y="20.32" rot="R90"/>
 <instance part="J2" gate="G$1" x="35.56" y="20.32" rot="R90"/>
-<instance part="Q1" gate="G$1" x="-36.83" y="-16.51"/>
-<instance part="Q2" gate="G$1" x="-3.81" y="-16.51"/>
-<instance part="Q3" gate="G$1" x="29.21" y="-16.51"/>
+<instance part="Q1" gate="G$1" x="-35.56" y="-16.51"/>
+<instance part="Q2" gate="G$1" x="-2.54" y="-16.51"/>
+<instance part="Q3" gate="G$1" x="30.48" y="-16.51"/>
 <instance part="R1" gate="G$1" x="-44.45" y="-16.51"/>
 <instance part="R2" gate="G$1" x="-11.43" y="-16.51"/>
 <instance part="R3" gate="G$1" x="21.59" y="-16.51"/>
-<instance part="U$5" gate="G$1" x="-30.48" y="-16.51" rot="R90"/>
-<instance part="U$6" gate="G$1" x="2.54" y="-16.51" rot="R90"/>
-<instance part="U$7" gate="G$1" x="35.56" y="-16.51" rot="R90"/>
+<instance part="U$5" gate="G$1" x="-29.21" y="-16.51" rot="R90"/>
+<instance part="U$6" gate="G$1" x="3.81" y="-16.51" rot="R90"/>
+<instance part="U$7" gate="G$1" x="36.83" y="-16.51" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -1692,18 +1692,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="Q1" gate="G$1" pin="B"/>
 <pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="-38.1" y1="-16.51" x2="-39.37" y2="-16.51" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="Q2" gate="G$1" pin="B"/>
 <pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="-5.08" y1="-16.51" x2="-6.35" y2="-16.51" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="Q3" gate="G$1" pin="B"/>
 <pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="-16.51" x2="26.67" y2="-16.51" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

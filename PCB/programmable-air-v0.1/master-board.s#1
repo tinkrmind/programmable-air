@@ -548,9 +548,9 @@ Each pin can provide or receive a maximum of 40 mA and has an internal pull-up r
 <hole x="8.89" y="0" drill="2.54"/>
 </package>
 <package name="TO220">
-<pad name="P$1" x="-2.54" y="0" drill="1.5748" diameter="2.1844" shape="square"/>
-<pad name="P$2" x="0" y="0" drill="1.5748" diameter="2.1844"/>
-<pad name="P$3" x="2.54" y="0" drill="1.5748" diameter="2.1844"/>
+<pad name="P$1" x="-2.54" y="0" drill="1.397" diameter="2.032" shape="square"/>
+<pad name="P$2" x="0" y="0" drill="1.27" diameter="2.032"/>
+<pad name="P$3" x="2.54" y="0" drill="1.27" diameter="2.032"/>
 <wire x1="-5.08" y1="2.54" x2="-5.08" y2="-2.54" width="0.127" layer="21"/>
 <wire x1="-5.08" y1="-2.54" x2="5.08" y2="-2.54" width="0.127" layer="21"/>
 <wire x1="5.08" y1="-2.54" x2="5.08" y2="2.54" width="0.127" layer="21"/>
