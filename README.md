@@ -82,8 +82,17 @@ To make life easier, I decided to go for following minimum specifications
 
 ### Choice of pressure sensor: [2SMPP03](https://www.digikey.com/product-detail/en/omron-electronics-inc-emc-div/2SMPP03/Z3639-ND/3671590)
 
-The most expensive component in the entire setup is a pressure sensor. Since one pressure sensor is required for every pneumatic channel, the cost scales linearly with number of channels. Pressure sensors that work in <-0.5 atm to >+0.5 atm range are relatively expensive since few large industries demand such a sensor. The cheapest such sensor I could find is [2SMPP03](https://www.digikey.com/product-detail/en/omron-electronics-inc-emc-div/2SMPP03/Z3639-ND/3671590) by Omron electronics. It is priced at <7$/per unit for 5 units and while it needs additional circuitry to work, the effort is well worth it. The cheapest sensor that works standalone is atleast 30$/per unit at 5 units. The rest of the system has to be designed around this part as this has the largest cost savings associated with it.
+The most expensive component in the entire setup is a pressure sensor. Since one pressure sensor is required for every pneumatic channel, the cost scales linearly with number of channels. Pressure sensors that work in <-0.5 atm to >+0.5 atm range are relatively expensive since few large industries demand such a sensor. The cheapest such sensor I could find is [2SMPP03](https://www.digikey.com/product-detail/en/omron-electronics-inc-emc-div/2SMPP03/Z3639-ND/3671590) by Omron electronics. It is priced at <7$/per unit for 5 units and while it needs additional circuitry to work, the effort is well worth it. The cheapest sensor that works standalone is at least 30$/per unit at 5 units. The rest of the system has to be designed around this part as this has the largest cost savings associated with it.
 
+### V0.1 PCB design
+
+Used Aiyima pumps and nano on master board. The slave board has pressure sensor and three two way valves. Upto four slave boards can attach to a single master board, as shown in mock-up below.
+
+![Mock-up of master and slave board positions]()
+
+#### Learnings from design and manufacture:
+
+The rated current for DC motors can differ highly from the actual current consumed. WHile the motos are rated at 350mA, a 0.8A transistor blew up while trying to supply enough current to it. This could be because of high stall/startup current. V0.11 will have TIP120 or FET rated to at least 2A. As a result of design oversight, the was no 5V power connection from master to slave board. While 12V input to slave board can be converted to a clean 5V with a relatively cheap regulator, V0.11 will have power connections for 5V as well. Added filter capacitors to all power rails in V0.11.
 
 ### What can you use it for?
 
@@ -96,4 +105,3 @@ The most expensive component in the entire setup is a pressure sensor. Since one
 
 * Crazy soft robots
 * Balloons!
-
