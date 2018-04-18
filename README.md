@@ -84,24 +84,35 @@ To make life easier, I decided to go for following minimum specifications
 
 The most expensive component in the entire setup is a pressure sensor. Since one pressure sensor is required for every pneumatic channel, the cost scales linearly with number of channels. Pressure sensors that work in <-0.5 atm to >+0.5 atm range are relatively expensive since few large industries demand such a sensor. The cheapest such sensor I could find is [2SMPP03](https://www.digikey.com/product-detail/en/omron-electronics-inc-emc-div/2SMPP03/Z3639-ND/3671590) by Omron electronics. It is priced at <7$/per unit for 5 units and while it needs additional circuitry to work, the effort is well worth it. The cheapest sensor that works standalone is at least 30$/per unit at 5 units. The rest of the system has to be designed around this part as this has the largest cost savings associated with it.
 
-### V0.1 PCB design
+### v0.1 PCB design
 
 Used Aiyima pumps and nano on master board. The slave board has pressure sensor and three two way valves. Upto four slave boards can attach to a single master board, as shown in mock-up below.
 
-![Mock-up of master and slave board positions]()
+![Mock-up of master and slave board positions](https://imgur.com/YLw2Cig.png)
 
 #### Learnings from design and manufacture:
 
-The rated current for DC motors can differ highly from the actual current consumed. WHile the motos are rated at 350mA, a 0.8A transistor blew up while trying to supply enough current to it. This could be because of high stall/startup current. V0.11 will have TIP120 or FET rated to at least 2A. As a result of design oversight, the was no 5V power connection from master to slave board. While 12V input to slave board can be converted to a clean 5V with a relatively cheap regulator, V0.11 will have power connections for 5V as well. Added filter capacitors to all power rails in V0.11.
+The rated current for DC motors can differ highly from the actual current consumed. While the motors are rated at 350mA, a 0.8A transistor blew up while trying to supply enough current to it. This could be because of high stall/startup current. v0.11 will have TIP120 or FET rated to at least 2A. The valves are rated at 0.11A so, using a 2222 transistor seems like a safe bet because they can handle peak currents of up to 0.8A(a 7x margin). Because these are much cheaper than TIP120, it makes sense to use them.
+
+As a result of design oversight, the was no 5V power connection from master to slave board. While 12V input to slave board can be converted to a clean 5V with a relatively cheap regulator, v0.11 will have power connections for 5V as well. Added filter capacitors to all power rails in v0.11.
+
+I manufactured the PCBs in an OtherMill CNC. It is the fastest way I have found to do small run quick prototypes. Designing for OtherMill manufacture is a completely different game than designing for production from a PCB fab house. Particularly, OtherMill PCBs are constrained to maximum two layers and vias are not plated. Also the tolerances have to be relaxed to allow for easier production. All in all this means you have to be a lot smarter, using minimum number of vias and distributing your components further out.
 
 ### What can you use it for?
 
 #### Vacuum
 
-* Electronic component pick and place
+* [![Electronic component pick and place](https://i.vimeocdn.com/video/695348325.webp?mw=960&mh=540)](https://vimeo.com/265359252)
 * Universal vacuum based gripper
 
 #### Inflatable
 
 * Crazy soft robots
 * Balloons!
+
+### Changes I'd like to work on:
+* LittleBits or mCookie like magnetic snap connectors instead of dupont sticks
+* Manage power to motors and solenoids better. e.g. Arduino USB should not power the motors when no Vin is provided.
+* Make pneumatic connections via simple snapping as well. Individually connecting cables is so 2000's :P
+* Simpler custom connectors to make pneumatic connections. Aquarium type connectors are very restrictive.
+* Cheap 3mm to 3/16th converter
