@@ -102,7 +102,10 @@ I manufactured the PCBs in an OtherMill CNC. It is the fastest way I have found 
 
 #### Vacuum
 
-* [![Electronic component pick and place](https://i.vimeocdn.com/video/695348325.webp?mw=960&mh=540)](https://vimeo.com/265359252)
+* Electronic component pick and place. Video demo:
+
+[![Electronic component pick and place](https://i.vimeocdn.com/video/695348325.webp?mw=540)](https://vimeo.com/265359252)
+
 * Universal vacuum based gripper
 
 #### Inflatable
@@ -111,7 +114,7 @@ I manufactured the PCBs in an OtherMill CNC. It is the fastest way I have found 
 * Balloons!
 
 ### Changes I'd like to work on:
-* LittleBits or mCookie like magnetic snap connectors instead of dupont sticks
+* LittleBits or mCookie like magnetic snap connectors instead of dupont sticks. Failing that, just plain better connections.. dupont connectors aren't meant for this kind of mechanical strains. Maybe old school RS232 or serial type stuff?
 * Manage power to motors and solenoids better. e.g. Arduino USB should not power the motors when no Vin is provided.
 * Make pneumatic connections via simple snapping as well. Individually connecting cables is so 2000's :P
 * Simpler custom connectors to make pneumatic connections. Aquarium type connectors are very restrictive.
