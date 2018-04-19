@@ -51,6 +51,15 @@ void loop() {
     neopixel.show();
     setValve(0, CLOSE);
     setValve(1, OPEN);
+    setValve(2, CLOSE);
+  }
+  // If button 2 is pressed blow air in to un jam
+  else if (!digitalRead(btn2)) {
+    neopixel.setPixelColor(0, neopixel.Color(0, 25, 25));
+    neopixel.show();
+    setValve(0, CLOSE);
+    setValve(1, CLOSE);
+    setValve(2, OPEN);
   }
   // if button is not pressed suck air from syringe to pick up components
   else {
@@ -58,6 +67,7 @@ void loop() {
     neopixel.show();
     setValve(0, OPEN);
     setValve(1, CLOSE);
+    setValve(2, CLOSE);
   }
 }
 
