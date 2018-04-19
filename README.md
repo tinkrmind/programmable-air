@@ -106,12 +106,16 @@ I manufactured the PCBs in an OtherMill CNC. It is the fastest way I have found 
 
 [![Electronic component pick and place](https://i.vimeocdn.com/video/695348325.webp?mw=540)](https://vimeo.com/265359252)
 
-* Universal vacuum based gripper
+* Universal vacuum based gripper. Video demo:
+
+[![Universal vacuum based gripper](https://i.vimeocdn.com/video/695659195.webp?mw=540)](https://vimeo.com/265605796)
+
 
 #### Inflatable
 
 * Crazy soft robots
 * Balloons!
+* Small air brush? I'd love it if the system could be adopted to make an automated air brush/graffiti gun. But airbrushes seem to require around 10L/min air flow rate and the current pump can only deliver 1-2L/min.
 
 ### Changes I'd like to work on:
 * LittleBits or mCookie like magnetic snap connectors instead of dupont sticks. Failing that, just plain better connections.. dupont connectors aren't meant for this kind of mechanical strains. Maybe old school RS232 or serial type stuff?
