@@ -13,7 +13,7 @@ const int pump[2] = {A3, 7};
 
 #define OPEN 1
 #define CLOSE 0
-// atmosphere, pressure, vacuum
+// vacuum, atmosphere, pressure
 const int valve[12] = {   4,  5,  6, \
                           9,  10, 11, \
                           A0, A1, A2,  \
@@ -31,44 +31,29 @@ const int sense[4] = {A7, 8, A6, A4};
 Adafruit_NeoPixel neopixel = Adafruit_NeoPixel(1, neopixelPin, NEO_GRB + NEO_KHZ800);
 
 void setup() {
+  Serial.begin(115200);
+  while(!Serial);
+  
+  
   // Initiate with all valve and pumps off
   initializePins();
 
   //switch on pumps
   digitalWrite(pump[0], HIGH);
   digitalWrite(pump[1], HIGH);
-
-  // Initialise IO board
-  neopixel.begin();
-  pinMode(btn1, INPUT_PULLUP);
-  pinMode(btn2, INPUT_PULLUP);
 }
 
 void loop() {
-  // If button 1 is pressed release the conponent
-  if (!digitalRead(btn1)) {
-    neopixel.setPixelColor(0, neopixel.Color(0, 25, 0));
-    neopixel.show();
-    setValve(0, CLOSE);
-    setValve(1, OPEN);
-    setValve(2, CLOSE);
-  }
-  // If button 2 is pressed blow air in to un-jam
-  else if (!digitalRead(btn2)) {
-    neopixel.setPixelColor(0, neopixel.Color(0, 25, 25));
-    neopixel.show();
-    setValve(0, CLOSE);
-    setValve(1, CLOSE);
-    setValve(2, OPEN);
-  }
-  // if button is not pressed suck air from syringe to pick up components
-  else {
-    neopixel.setPixelColor(0, neopixel.Color(0, 0, 0));
-    neopixel.show();
-    setValve(0, OPEN);
-    setValve(1, CLOSE);
-    setValve(2, CLOSE);
-  }
+    Serial.println("loop");
+    if(millis() < 30000){
+      setValve(1, OPEN);
+      setValve(2, CLOSE);
+    }
+    else{
+      setValve(1, CLOSE);
+      setValve(2, OPEN);
+    }
+    delay(1000);
 }
 
 void setAllValves(int position) {
