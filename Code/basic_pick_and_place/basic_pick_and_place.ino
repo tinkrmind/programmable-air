@@ -46,7 +46,7 @@ void setup() {
 
 void loop() {
   // If button 1 is pressed release the conponent
-  if (!digitalRead(btn1)) {
+  if (!digitalRead(btn2)) {
     neopixel.setPixelColor(0, neopixel.Color(0, 25, 0));
     neopixel.show();
     setValve(0, CLOSE);
@@ -54,7 +54,7 @@ void loop() {
     setValve(2, CLOSE);
   }
   // If button 2 is pressed blow air in to un-jam
-  else if (!digitalRead(btn2)) {
+  else if (!digitalRead(btn1)) {
     neopixel.setPixelColor(0, neopixel.Color(0, 25, 25));
     neopixel.show();
     setValve(0, CLOSE);
