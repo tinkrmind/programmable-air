@@ -4,7 +4,8 @@
 // HX711.PD_SCK	- pin #A0
 
 //HX711 scale(A1, A0);		// parameter "gain" is ommited; the default value 128 is used by the library
-HX711 scale(6, 5, 32);    // parameter "gain" is ommited; the default value 128 is used by the library
+  HX711 scale(6,  5, 32);    // parameter "gain" is ommited; the default value 128 is used by the library
+//HX711 scale(DT, SCK);
 
 void setup() {
   Serial.begin(38400);
@@ -42,15 +43,20 @@ void setup() {
   //  Serial.println(scale.get_units(5), 1);        // print the average of 5 readings from the ADC minus tare weight, divided
   //	//by the SCALE parameter set with set_scale
   //
-x  //  Serial.println("Readings:");
+  //  Serial.println("Readings:");
 }
 
 void loop() {
   //  Serial.print("one reading:\t");
-  Serial.print(scale.read(), 1);
+  int64_t val =scale.read();
+  if(val>pow(2, 24)){
+    val = val - pow(2, 32);
+  }
+  int32_t v=val;
+  Serial.println(v);
   //  Serial.print("\t| average:\t");
-  Serial.print(',');
-  Serial.println(scale.read_average(10), 1);
+//  Serial.print(',');
+//  Serial.println(scale.read_average(10), 1);
 
   //  scale.power_down();			        // put the ADC in sleep mode
   delay(50);
