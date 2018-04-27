@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2241,6 +2241,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-58.42" y1="34.29" x2="-58.42" y2="16.51" width="0.1524" layer="91"/>
 <junction x="-39.37" y="34.29"/>
 <junction x="-39.37" y="25.4"/>
+<pinref part="U$9" gate="G$1" pin="P$6"/>
+<wire x1="27.94" y1="25.4" x2="79.375" y2="25.4" width="0.1524" layer="91"/>
+<junction x="27.94" y="25.4"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -2280,12 +2283,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="43.18" y="26.67"/>
 <junction x="17.78" y="-8.89"/>
 <pinref part="C2" gate="G$1" pin="+"/>
-<wire x1="55.88" y1="16.51" x2="55.88" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="25.4" x2="55.88" y2="26.67" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="16.51" x2="55.88" y2="26.67" width="0.1524" layer="91"/>
 <wire x1="49.53" y1="26.67" x2="55.88" y2="26.67" width="0.1524" layer="91"/>
-<pinref part="U$9" gate="G$1" pin="P$6"/>
-<wire x1="79.375" y1="25.4" x2="55.88" y2="25.4" width="0.1524" layer="91"/>
-<junction x="55.88" y="25.4"/>
 </segment>
 </net>
 <net name="GND" class="0">
