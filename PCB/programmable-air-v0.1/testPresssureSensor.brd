@@ -336,15 +336,15 @@ design rules under a new name.</description>
 <param name="layerSetup" value="(1*16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
 <param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="12mil"/>
-<param name="mdWirePad" value="12mil"/>
-<param name="mdWireVia" value="12mil"/>
-<param name="mdPadPad" value="12mil"/>
-<param name="mdPadVia" value="12mil"/>
-<param name="mdViaVia" value="12mil"/>
-<param name="mdSmdPad" value="12mil"/>
-<param name="mdSmdVia" value="12mil"/>
-<param name="mdSmdSmd" value="12mil"/>
+<param name="mdWireWire" value="20mil"/>
+<param name="mdWirePad" value="20mil"/>
+<param name="mdWireVia" value="20mil"/>
+<param name="mdPadPad" value="20mil"/>
+<param name="mdPadVia" value="20mil"/>
+<param name="mdViaVia" value="20mil"/>
+<param name="mdSmdPad" value="20mil"/>
+<param name="mdSmdVia" value="20mil"/>
+<param name="mdSmdSmd" value="20mil"/>
 <param name="mdViaViaSameLayer" value="6mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
 <param name="mdCopperDimension" value="40mil"/>
@@ -581,12 +581,10 @@ design rules under a new name.</description>
 <contactref element="C1" pad="2"/>
 <wire x1="3.81" y1="7.62" x2="11.43" y2="7.62" width="0.508" layer="16"/>
 <wire x1="3.81" y1="7.62" x2="2.54" y2="8.417825" width="0.508" layer="16"/>
-<wire x1="2.54" y1="16.982175" x2="5.08" y2="24.13" width="0.508" layer="16"/>
 <wire x1="2.54" y1="8.417825" x2="1.3081" y2="9.649725" width="0.508" layer="16"/>
-<wire x1="1.3081" y1="15.750275" x2="2.54" y2="16.982175" width="0.508" layer="16"/>
+<wire x1="1.3081" y1="15.750275" x2="2.3039125" y2="16.7460875" width="0.508" layer="16"/>
+<wire x1="2.3039125" y1="16.7460875" x2="2.54" y2="16.982175" width="0.508" layer="16"/>
 <wire x1="1.3081" y1="9.649725" x2="1.3081" y2="15.750275" width="0.508" layer="16"/>
-<wire x1="5.08" y1="24.13" x2="3.81" y2="20.32" width="0.508" layer="16"/>
-<wire x1="3.81" y1="20.32" x2="15.24" y2="20.32" width="0.508" layer="16"/>
 <wire x1="17.78" y1="22.86" x2="17.78" y2="24.13" width="0.508" layer="16"/>
 <wire x1="15.24" y1="20.32" x2="17.78" y2="22.86" width="0.508" layer="16"/>
 <wire x1="11.43" y1="7.62" x2="12.7" y2="7.62" width="0.508" layer="16"/>
@@ -604,6 +602,11 @@ design rules under a new name.</description>
 <vertex x="43.18" y="0"/>
 <vertex x="0" y="0"/>
 </polygon>
+<wire x1="2.3039125" y1="16.7460875" x2="2.3039125" y2="20.0839125" width="0.508" layer="16"/>
+<wire x1="2.3039125" y1="20.0839125" x2="2.54" y2="20.32" width="0.508" layer="16"/>
+<wire x1="2.54" y1="20.32" x2="5.08" y2="20.32" width="0.508" layer="16"/>
+<wire x1="5.08" y1="20.32" x2="5.08" y2="24.13" width="0.508" layer="16"/>
+<wire x1="5.08" y1="20.32" x2="15.24" y2="20.32" width="0.508" layer="16"/>
 </signal>
 <signal name="N$1">
 <contactref element="U$1" pad="P$4"/>
