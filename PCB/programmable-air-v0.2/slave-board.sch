@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.1">
+<eagle version="8.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -161,16 +162,16 @@
 <library name="programmable-air-components">
 <packages>
 <package name="HX711">
-<pad name="P$1" x="-12.7" y="6.35" drill="1.27" shape="square"/>
-<pad name="P$2" x="-12.7" y="3.81" drill="1.27" shape="square"/>
-<pad name="P$3" x="-12.7" y="1.27" drill="1.27" shape="square"/>
-<pad name="P$4" x="-12.7" y="-1.27" drill="1.27" shape="square"/>
-<pad name="P$5" x="-12.7" y="-3.81" drill="1.27" shape="square"/>
-<pad name="P$6" x="-12.7" y="-6.35" drill="1.27" shape="square"/>
-<pad name="P$7" x="12.7" y="3.81" drill="1.27" shape="square"/>
-<pad name="P$8" x="12.7" y="1.27" drill="1.27" shape="square"/>
-<pad name="P$9" x="12.7" y="-1.27" drill="1.27" shape="square"/>
-<pad name="P$10" x="12.7" y="-3.81" drill="1.27" shape="square"/>
+<pad name="P$1" x="-12.7" y="6.35" drill="0.8"/>
+<pad name="P$2" x="-12.7" y="3.81" drill="0.8"/>
+<pad name="P$3" x="-12.7" y="1.27" drill="0.8"/>
+<pad name="P$4" x="-12.7" y="-1.27" drill="0.75"/>
+<pad name="P$5" x="-12.7" y="-3.81" drill="0.75"/>
+<pad name="P$6" x="-12.7" y="-6.35" drill="0.85" rot="R180"/>
+<pad name="P$7" x="12.7" y="3.81" drill="0.8"/>
+<pad name="P$8" x="12.7" y="1.27" drill="0.65"/>
+<pad name="P$9" x="12.7" y="-1.27" drill="0.85"/>
+<pad name="P$10" x="12.7" y="-3.81" drill="0.85"/>
 <wire x1="-17.78" y1="10.16" x2="-17.78" y2="-10.16" width="0.127" layer="21"/>
 <wire x1="-17.78" y1="-10.16" x2="17.78" y2="-10.16" width="0.127" layer="21"/>
 <wire x1="17.78" y1="-10.16" x2="17.78" y2="10.16" width="0.127" layer="21"/>
@@ -178,32 +179,24 @@
 </package>
 <package name="CJV23">
 <circle x="0" y="0" radius="12.7" width="0.127" layer="21"/>
-<hole x="7.62" y="0" drill="2.54"/>
-<hole x="7.62" y="1.27" drill="2.54"/>
-<hole x="7.62" y="2.54" drill="2.54"/>
-<hole x="7.62" y="-1.27" drill="2.54"/>
-<hole x="7.62" y="-2.54" drill="2.54"/>
-<hole x="-7.62" y="0" drill="2.54"/>
-<hole x="-7.62" y="1.27" drill="2.54"/>
-<hole x="-7.62" y="2.54" drill="2.54"/>
-<hole x="-7.62" y="-1.27" drill="2.54"/>
-<hole x="-7.62" y="-2.54" drill="2.54"/>
 <smd name="P$1" x="-7.62" y="0" dx="10.16" dy="3.5" layer="16" rot="R90"/>
 <smd name="P$2" x="7.62" y="0" dx="10.16" dy="3.5" layer="16" rot="R90"/>
+<hole x="-7.62" y="0" drill="2.032"/>
+<hole x="7.62" y="0" drill="2.032"/>
+<hole x="-7.62" y="1.016" drill="2.032"/>
+<hole x="-7.62" y="2.032" drill="2.032"/>
+<hole x="-7.62" y="3.048" drill="2.032"/>
+<hole x="-7.62" y="-1.016" drill="2.032"/>
+<hole x="-7.62" y="-2.032" drill="2.032"/>
+<hole x="-7.62" y="-3.048" drill="2.032"/>
+<hole x="7.62" y="-1.016" drill="2.032"/>
+<hole x="7.62" y="-2.032" drill="2.032"/>
+<hole x="7.62" y="-3.048" drill="2.032"/>
+<hole x="7.62" y="1.016" drill="2.032"/>
+<hole x="7.62" y="2.032" drill="2.032"/>
+<hole x="7.62" y="3.048" drill="2.032"/>
 </package>
 <package name="IN4148">
-<polygon width="0.127" layer="1">
-<vertex x="2.54" y="-0.9652"/>
-<vertex x="0.635" y="-0.3302"/>
-<vertex x="0.635" y="0.3048"/>
-<vertex x="2.54" y="0.9398"/>
-</polygon>
-<polygon width="0.127" layer="1">
-<vertex x="-0.635" y="-0.3302"/>
-<vertex x="-2.54" y="-0.9652"/>
-<vertex x="-2.54" y="0.9398"/>
-<vertex x="-0.635" y="0.3048"/>
-</polygon>
 <smd name="P$1" x="1.8288" y="0" dx="1.4224" dy="0.7112" layer="1" rot="R180"/>
 <smd name="P$2" x="-1.8288" y="0" dx="1.4224" dy="0.7112" layer="1" rot="R180"/>
 <wire x1="1.27" y1="-1.27" x2="1.27" y2="0" width="0.127" layer="21"/>
@@ -211,6 +204,18 @@
 <wire x1="1.27" y1="0" x2="-1.27" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="-1.27" y1="-1.27" x2="-1.27" y2="1.27" width="0.127" layer="21"/>
 <wire x1="-1.27" y1="1.27" x2="1.27" y2="0" width="0.127" layer="21"/>
+<polygon width="0.127" layer="1">
+<vertex x="-3.048" y="1.016"/>
+<vertex x="-3.048" y="-1.016"/>
+<vertex x="-1.016" y="-0.508"/>
+<vertex x="-1.016" y="0.508"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="1.016" y="0.508"/>
+<vertex x="1.016" y="-0.508"/>
+<vertex x="3.048" y="-1.016"/>
+<vertex x="3.048" y="1.016"/>
+</polygon>
 </package>
 <package name="2SMPP-03">
 <hole x="0" y="0" drill="4.064"/>
@@ -2073,7 +2078,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="U$3" gate="G$1" x="0" y="-10.16"/>
 <instance part="U$4" gate="G$1" x="33.02" y="-10.16"/>
 <instance part="J1" gate="G$1" x="-31.75" y="20.32" rot="R90"/>
-<instance part="J2" gate="G$1" x="35.56" y="20.32" rot="R90"/>
+<instance part="J2" gate="G$1" x="35.56" y="20.32" rot="MR90"/>
 <instance part="Q1" gate="G$1" x="-35.56" y="-16.51"/>
 <instance part="Q2" gate="G$1" x="-2.54" y="-16.51"/>
 <instance part="Q3" gate="G$1" x="30.48" y="-16.51"/>
@@ -2158,9 +2163,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="2"/>
-<wire x1="40.64" y1="25.4" x2="40.64" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="27.94" x2="-26.67" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="-26.67" y1="27.94" x2="-26.67" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
@@ -2170,27 +2172,27 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-13.97" y1="0" x2="-26.67" y2="0" width="0.1524" layer="91"/>
 <wire x1="-26.67" y1="0" x2="-26.67" y2="25.4" width="0.1524" layer="91"/>
 <junction x="-26.67" y="25.4"/>
+<pinref part="J2" gate="G$1" pin="2"/>
+<wire x1="30.48" y1="25.4" x2="30.48" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="27.94" x2="-26.67" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="3"/>
 <wire x1="-29.21" y1="25.4" x2="-29.21" y2="29.21" width="0.1524" layer="91"/>
-<wire x1="-29.21" y1="29.21" x2="38.1" y2="29.21" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="3"/>
-<wire x1="38.1" y1="29.21" x2="38.1" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="-29.21" y1="25.4" x2="-29.21" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="-29.21" y1="-2.54" x2="-16.51" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="-16.51" y1="-2.54" x2="-16.51" y2="-16.51" width="0.1524" layer="91"/>
 <junction x="-29.21" y="25.4"/>
+<wire x1="-29.21" y1="29.21" x2="33.02" y2="29.21" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="3"/>
+<wire x1="33.02" y1="29.21" x2="33.02" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="4"/>
-<wire x1="35.56" y1="25.4" x2="35.56" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="30.48" x2="-31.75" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="4"/>
 <wire x1="-31.75" y1="30.48" x2="-31.75" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
@@ -2198,63 +2200,64 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-49.53" y1="6.35" x2="-31.75" y2="6.35" width="0.1524" layer="91"/>
 <wire x1="-31.75" y1="6.35" x2="-31.75" y2="25.4" width="0.1524" layer="91"/>
 <junction x="-31.75" y="25.4"/>
+<pinref part="J2" gate="G$1" pin="4"/>
+<wire x1="35.56" y1="25.4" x2="35.56" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="30.48" x2="-31.75" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="5"/>
 <wire x1="-34.29" y1="25.4" x2="-34.29" y2="31.75" width="0.1524" layer="91"/>
-<wire x1="-34.29" y1="31.75" x2="33.02" y2="31.75" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="5"/>
-<wire x1="33.02" y1="31.75" x2="33.02" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="SCK"/>
 <wire x1="-34.29" y1="25.4" x2="-34.29" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="-34.29" y1="15.24" x2="-15.24" y2="15.24" width="0.1524" layer="91"/>
 <junction x="-34.29" y="25.4"/>
+<pinref part="J2" gate="G$1" pin="5"/>
+<wire x1="-34.29" y1="31.75" x2="38.1" y2="31.75" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="31.75" x2="38.1" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="6"/>
-<wire x1="30.48" y1="25.4" x2="30.48" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="33.02" x2="-36.83" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="6"/>
 <wire x1="-36.83" y1="33.02" x2="-36.83" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="DT"/>
 <wire x1="-15.24" y1="12.7" x2="-36.83" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="-36.83" y1="12.7" x2="-36.83" y2="25.4" width="0.1524" layer="91"/>
 <junction x="-36.83" y="25.4"/>
+<pinref part="J2" gate="G$1" pin="6"/>
+<wire x1="40.64" y1="25.4" x2="40.64" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="33.02" x2="-36.83" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="7"/>
 <wire x1="-39.37" y1="25.4" x2="-39.37" y2="34.29" width="0.1524" layer="91"/>
-<wire x1="-39.37" y1="34.29" x2="27.94" y2="34.29" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="7"/>
-<wire x1="27.94" y1="34.29" x2="27.94" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="VCC"/>
 <wire x1="-39.37" y1="25.4" x2="-39.37" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="-39.37" y1="17.78" x2="-15.24" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="+"/>
 <wire x1="-39.37" y1="34.29" x2="-58.42" y2="34.29" width="0.1524" layer="91"/>
 <wire x1="-58.42" y1="34.29" x2="-58.42" y2="16.51" width="0.1524" layer="91"/>
-<junction x="-39.37" y="34.29"/>
 <junction x="-39.37" y="25.4"/>
+<pinref part="J2" gate="G$1" pin="7"/>
+<wire x1="-39.37" y1="34.29" x2="43.18" y2="34.29" width="0.1524" layer="91"/>
+<junction x="-39.37" y="34.29"/>
+<wire x1="43.18" y1="34.29" x2="43.18" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="U$9" gate="G$1" pin="P$6"/>
-<wire x1="27.94" y1="25.4" x2="79.375" y2="25.4" width="0.1524" layer="91"/>
-<junction x="27.94" y="25.4"/>
+<wire x1="43.18" y1="34.29" x2="79.375" y2="34.29" width="0.1524" layer="91"/>
+<wire x1="79.375" y1="34.29" x2="79.375" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VIN" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="-24.13" y1="25.4" x2="-24.13" y2="26.67" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="1"/>
-<wire x1="-24.13" y1="26.67" x2="43.18" y2="26.67" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="26.67" x2="43.18" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-24.13" y1="26.67" x2="27.94" y2="26.67" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="G$1" pin="VIN"/>
-<wire x1="43.18" y1="26.67" x2="49.53" y2="26.67" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="26.67" x2="49.53" y2="26.67" width="0.1524" layer="91"/>
 <wire x1="49.53" y1="26.67" x2="49.53" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="P$1"/>
 <wire x1="-48.26" y1="-10.16" x2="-48.26" y2="-8.89" width="0.1524" layer="91"/>
@@ -2280,11 +2283,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="-48.26" y="-8.89"/>
 <junction x="17.78" y="-7.62"/>
 <junction x="-15.24" y="-8.89"/>
-<junction x="43.18" y="26.67"/>
 <junction x="17.78" y="-8.89"/>
 <pinref part="C2" gate="G$1" pin="+"/>
 <wire x1="55.88" y1="16.51" x2="55.88" y2="26.67" width="0.1524" layer="91"/>
 <wire x1="49.53" y1="26.67" x2="55.88" y2="26.67" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="1"/>
+<wire x1="27.94" y1="26.67" x2="27.94" y2="25.4" width="0.1524" layer="91"/>
+<junction x="27.94" y="26.67"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -2309,10 +2314,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-48.26" y1="30.48" x2="-48.26" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="-48.26" y1="35.56" x2="-41.91" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="8"/>
-<pinref part="J2" gate="G$1" pin="8"/>
-<wire x1="25.4" y1="25.4" x2="25.4" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="35.56" x2="-41.91" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="-41.91" y1="35.56" x2="-41.91" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="8"/>
+<wire x1="45.72" y1="25.4" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="35.56" x2="-41.91" y2="35.56" width="0.1524" layer="91"/>
 <junction x="-41.91" y="35.56"/>
 </segment>
 <segment>
