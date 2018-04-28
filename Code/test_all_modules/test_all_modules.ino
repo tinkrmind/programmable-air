@@ -9,31 +9,29 @@
 
 #include <Adafruit_NeoPixel.h>
 
-const int pump[2] = {A3, 7};
+const int pump[2] = {10, 11};
 
 #define OPEN 1
 #define CLOSE 0
 // vacuum, atmosphere, pressure
-const int valve[12] = {   4,  5,  6, \
-                          9,  10, 11, \
-                          A0, A1, A2,  \
-                          12, 3,  2
+const int valve[9] = {  9,  8,  7, \
+                        5,  4,  A4, \
+                        A0, A1, A2
                       };
 
-const int sense[4] = {A7, 8, A6, A4};
+const int sense[3] = {6, A5, A3};
 
 #define SCK 13
 
-#define neopixelPin 3
+#define neopixelPin 12
 #define btn1 2
-#define btn2 12
+#define btn2 3
 
-Adafruit_NeoPixel neopixel = Adafruit_NeoPixel(1, neopixelPin, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel neopixel = Adafruit_NeoPixel(3, neopixelPin, NEO_GRB + NEO_KHZ800);
 
 void setup() {
   Serial.begin(115200);
   while(!Serial);
-
 
   // Initiate with all valve and pumps off
   initializePins();
