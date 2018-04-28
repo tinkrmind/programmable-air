@@ -98,6 +98,8 @@ As a result of design oversight, the was no 5V power connection from master to s
 
 I manufactured the PCBs in an OtherMill CNC. It is the fastest way I have found to do small run quick prototypes. Designing for OtherMill manufacture is a completely different game than designing for production from a PCB fab house. Particularly, OtherMill PCBs are constrained to maximum two layers and vias are not plated. Also the tolerances have to be relaxed to allow for easier production. All in all this means you have to be a lot smarter, using minimum number of vias and distributing your components further out.
 
+A6 and A7 pins are only connected to the analog multiplexer and cannot be used as data write pins(e.g. for HX711). 
+
 ### What can you use it for?
 
 #### Vacuum

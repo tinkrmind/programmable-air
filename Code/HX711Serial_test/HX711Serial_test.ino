@@ -1,6 +1,6 @@
 #include "HX711.h"
 
-  HX711 scale(2,  13, 32);    
+  HX711 scale(A5,  13, 32);    
 //HX711 scale(DT, SCK);
 
 void setup() {
@@ -8,7 +8,8 @@ void setup() {
 }
 
 void loop() {
-  int64_t tempScaleReading =scale.read();
+//  int64_t tempScaleReading = scale.read();
+  int64_t tempScaleReading = scale.read_average(2);
   
   if(tempScaleReading>pow(2, 16)){
     tempScaleReading = tempScaleReading - pow(2, 32);
