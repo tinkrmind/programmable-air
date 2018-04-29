@@ -96,9 +96,25 @@ The rated current for DC motors can differ highly from the actual current consum
 
 As a result of design oversight, the was no 5V power connection from master to slave board. While 12V input to slave board can be converted to a clean 5V with a relatively cheap regulator, v0.11 will have power connections for 5V as well. Added filter capacitors to all power rails in v0.11.
 
-I manufactured the PCBs in an OtherMill CNC. It is the fastest way I have found to do small run quick prototypes. Designing for OtherMill manufacture is a completely different game than designing for production from a PCB fab house. Particularly, OtherMill PCBs are constrained to maximum two layers and vias are not plated. Also the tolerances have to be relaxed to allow for easier production. All in all this means you have to be a lot smarter, using minimum number of vias and distributing your components further out.
+I manufactured the PCBs in an OtherMill CNC. It is the fastest way I have found to do small run prototypes. Designing for OtherMill manufacture is a completely different game than designing for production from a PCB fab house. Particularly, OtherMill PCBs are constrained to maximum two layers and vias are not plated. Also the tolerances have to be relaxed to allow for easier production. All in all this means you have to be a lot smarter, using minimum number of vias and distributing your components further out.
 
-A6 and A7 pins are only connected to the analog multiplexer and cannot be used as data write pins(e.g. for HX711). 
+### Project Update: April 28th
+
+I was finally able to fix the issue with the pressure sensor. I'm using a LM10CN precision opAmp to supply 100uA to the 2SMPP-03 pressure sensor. This results in a 40mV span voltage through the Wheatstone bridge in the sensor, which is read through the HX711 24 bit ADC. While HX711 has the ability to excite the sensor directly, I have not been successful in using this because the IC is poorly documented. LM10CN adds 2.5$ to each pressure sensor unit and complicates the circuit, but the cost savings are still worth the hassle.
+
+I'm looking into using an instrumentation amplifier like INA125 instead of LM10CN+HX711. The cheapest instrumentation amp I could find is 7$, a hefty 3$ more than the HX711+LM10CN setup. Multiply by three/four sensors per kit and that's 10$. not sure if math makes sense. Note that the resolution of data gathered does not matter for this decision(an instrumentation amp would use the Arduino's 10bit ADC vs the 24 bit ADC on HX711), because the data will be corrupted with enough noise that anything above 8 bit resolution should not matter.
+
+I also decided to redesign the boards to be less than 100x50mm in size so that they can be easily manufactured in small batch runs from PCB manufacturers. 100x100mm panel size seems to be a universal cutoff for price variation(at least when it comes to hobby type boards). I utilized this avenue to add M3 mounting holes and standardize the berg stick connectors better.
+
+After using the board for a bit, I realized that most applications call for less than three air channels and I was using the fourth channel almost exclusively for IO. So I put two buttons and a few neopixels on the master board using up the pins from the fourth channel. Now the slave boards can only dock to the bottom or sides of the master boards, and not to the top. The top has easily accessible power connection, USB, buttons and neopixels. I also added LEDs to indicate the state of the pumps and valves. And I put the pumps on analogWrite pins for the atmega328. This will allow me to easily control the pumping speed.
+
+As an additional fun challenge, I decided to only use curved angles in the PCB traces. I think the PCBs came out looking rather sharp. On the practical side, since I manufacture PCBs with a CNC the lack of sharp corners translates to quieter, less jerky operation while manufacturing.
+
+### Working with Balloons - Case for flow meter
+
+Programmable Air gets feedback from a pressure sensor. This is because I was following an unwritten intuition that the pressure inside an inflatable is proportional to the volume of air pumped in. Boy! is that intuition wrong! For rubber inflatables like latex balloons or thin walled silicone the pressure initially increases with the air flow but then starts decreasing. The balloon is more of a flow driven device than a pressure driven device. To control something like this a flow meter makes much more sense. The initial case against a flow meter was because of leaks. It makes sense to have a flow sensor to use in conjunction with a pressure sensor as well. I'm on the lookout for a cheap flow sensor.
+
+**Result**: Flow sensors are too expensive! Like 80$ for a cheap one. Not even gonna think about using it for a while.
 
 ### What can you use it for?
 
@@ -117,7 +133,7 @@ A6 and A7 pins are only connected to the analog multiplexer and cannot be used a
 
 * Crazy soft robots
 * Balloons!
-* Small air brush? I'd love it if the system could be adopted to make an automated air brush/graffiti gun. But airbrushes seem to require around 10L/min air flow rate and the current pump can only deliver 1-2L/min.
+* Small air brush? I'd love it if the system could be adopted to make an automated air brush/graffiti gun. But airbrushes seem to require around 10L/min air flow rate and the current pump can only deliver 1-2L/mind
 
 ### Changes I'd like to work on:
 * LittleBits or mCookie like magnetic snap connectors instead of dupont sticks. Failing that, just plain better connections.. dupont connectors aren't meant for this kind of mechanical strains. Maybe old school RS232 or serial type stuff?
