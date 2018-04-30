@@ -6,13 +6,13 @@
 
 ### [Slideshow](https://docs.google.com/presentation/d/1pUnGk4v_wuCpisjBpNWZSJUyDwAFb4v1xceV4rX-Uv4/edit?usp=sharing)
 
-I started out making in earnest at IISc where I saw niche markets being exploited by hardware manufacturers. Sub-par equipment is often lauded as the best solution only because it's the only solution. As a result I worked directly with researchers making equipment for measuring elephant height, insect wing- beat frequency, underwater gates for fishes.. I see the same issue with soft robotics today.
+I started out making in earnest at IISc where I saw researchers being exploited by hardware manufacturers. Sub-par equipment is often lauded as the best solution only because it's the only solution. As a result I worked directly with researchers making equipment for measuring elephant height, insect wing- beat frequency, underwater gates for fishes.. I see the same issue with soft robotics today.
 
-The field of inflatable robotics is still in it's infancy. So there are a lot of low hanging fruit up for grabs. As such, the more people involved in active experimentation, the faster the field will mature.
+The field of inflatable robotics is still in its infancy. So there are a lot of low hanging fruit up for grabs. As such, the more people involved in active experimentation, the faster the field will mature.
 
-Experimenting with inflatables involves a lot of experimentation as a part of the design process. To do any repeatable experiments with inflatables, a programmable air source is required.
+Working with inflatables involves a lot of prototyping as a part of the design process. To do any repeatable experiments with inflatables, a controllable air source is required.
 
-I feel there isn't any affordable and easy to use programmable air source available for makers right now. This is a barrier to entry. I want create the bottom line programmable air source, for under 100$ and easier to setup and use than anything available right now.
+I feel there isn't any affordable and easy to use programmable air source available for makers right now. This is a barrier to entry. Programmable Air is my attempt to create a bottom of the line air source that is cheaper and easier to use than anything available right now. The market is strapped for cash makers and schools.
 
 ### What's wrong with the current solutions?
 
@@ -114,7 +114,7 @@ As an additional fun challenge, I decided to only use curved angles in the PCB t
 
 Programmable Air gets feedback from a pressure sensor. This is because I was following an unwritten intuition that the pressure inside an inflatable is proportional to the volume of air pumped in. Boy! is that intuition wrong! For rubber inflatables like latex balloons or thin walled silicone the pressure initially increases with the air flow but then starts decreasing. The balloon is more of a flow driven device than a pressure driven device. To control something like this a flow meter makes much more sense. The initial case against a flow meter was because of leaks. It makes sense to have a flow sensor to use in conjunction with a pressure sensor as well. I'm on the lookout for a cheap flow sensor.
 
-**Result**: Flow sensors are too expensive! Like 80$ for a cheap one. Not even gonna think about using it for a while.
+**Result**: Flow sensors are too expensive! Like 80$ for a [cheap one](https://www.digikey.com/product-detail/en/honeywell-sensing-and-productivity-solutions/AWM1100V/AWM1100V-ND/2552655). Not even gonna think about using it for a while.
 
 ### What can you use it for?
 
