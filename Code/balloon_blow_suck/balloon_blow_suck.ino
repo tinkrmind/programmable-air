@@ -58,33 +58,6 @@ void loop() {
   delay(5000);
   suck();
   delay(5000);
-//    suck();
-//  while (1);
-  //  delay(5000);
-  //  blow();
-  //  delay(10000);
-  //  delay(200);
-  //  vent();
-
-  //
-  //  if (analogRead(LDR) > 400)
-  //  {
-  //    //no signal yet
-  //    //vent to atmosphere
-  //    blow();
-  //    delay(200);
-  //    vent();
-  //  }
-  //  else
-  //  {
-  //    //signal detected
-  //    // blow air out
-  //    blow();
-  //    delay(30000);
-  //    vent();
-  //    while(1);
-  //  }
-  //  delay(1000);
 }
 
 void setAllValves(int position) {
@@ -127,7 +100,7 @@ void initializePins() {
   }
 }
 
-//2 - suck 0 blow 1 vent
+//0-blow, 1-vent, 2-suck 
 
 void vent() {
   setValve(1, OPEN);
