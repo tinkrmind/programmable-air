@@ -14,6 +14,29 @@ Working with inflatables involves a lot of prototyping as a part of the design p
 
 I feel there isn't any affordable and easy to use programmable air source available for makers right now. This is a barrier to entry. Programmable Air is my attempt to create a bottom of the line air source that is cheaper and easier to use than anything available right now. The market is strapped for cash makers and schools.
 
+### What can you use it for?
+
+#### Vacuum
+
+* Electronic component pick and place. Video demo:
+
+[![Electronic component pick and place](https://i.vimeocdn.com/video/695348325.webp?mw=540)](https://vimeo.com/265359252)
+
+* Universal vacuum based gripper. Video demo:
+
+[![Universal vacuum based gripper](https://i.vimeocdn.com/video/695659195.webp?mw=540)](https://vimeo.com/265605796)
+
+#### Inflatable
+
+* [Crazy soft robots]()
+* [Balloons!]()
+
+[![Balloons!](https://i.vimeocdn.com/video/698056507.webp?mw=540)](https://vimeo.com/267514802)
+
+* [Small air brush?](): Doesn't really work. You can get it to work if the air brush is pointing down and mars is on retrograde :P Check out the failed video below. Maybe it'll give you an idea for how you can improve on it.
+
+ Most airbrushes seem to require around 10L/min air flow rate and the current pump can only deliver 1-2L/min. This small one just barely works with the pumps.
+
 ### What's wrong with the current solutions?
 
 #### Pneuduino: [link](http://pneuduino.org/)
@@ -75,18 +98,17 @@ To make life easier, I decided to go for following minimum specifications
 |Pink-day -pump|3/16"|12V|[Amazon](https://www.amazon.com/Pink-day-Electric-Motor-Vacuum-Booster/dp/B076VLXHYB/ref=sr_1_9?ie=UTF8&qid=1523048670&sr=8-9&keywords=vacuum+pump+mini)|5$|Slow shipping|
 |Woolf -pump|3/16"|3-6V|[Amazon](https://www.amazon.com/3V-6V-Motor-Vacuum-Aquarium-Oxygen/dp/B074PPV6QH/ref=sr_1_15?ie=UTF8&qid=1523048670&sr=8-15&keywords=vacuum+pump+mini)|4$|Slow Shipping|
 |Valve 2way|3mm|5V|[Amazon](https://www.amazon.com/gp/product/B00JR3ZQSC/ref=od_aui_detailpages00?ie=UTF8&psc=1)|7.5$||
-|Omron +-pressure sensor|3mm|Wheatstone|[DigiKey](https://www.digikey.com/product-detail/en/omron-electronics-inc-emc-div/2SMPP03/Z3639-ND/3671590)|8$|Needs HX711 or [INA125](https://learn.adafruit.com/smart-cocktail-shaker/hardware) to work with arduino|
+|Omron +-pressure sensor|3mm|Wheatstone|[DigiKey](https://www.digikey.com/product-detail/en/omron-electronics-inc-emc-div/2SMPP03/Z3639-ND/3671590)|8$|Needs HX711+LM10CN or [INA125](https://learn.adafruit.com/smart-cocktail-shaker/hardware) to work with arduino|
 |3 way valve|3/16"|12V|[Elecrow](https://www.elecrow.com/electric-2-position-3-way-12v-micro-solenoid-valve-for-gas.html)|2.5$||
-|2 way valve|3/16"|12V|[MPJA](http://www.mpja.com/Solenoid-Valve-Normally-Closed-12VDC-Used/productinfo/33957+HD)|2.95$|Reused components. Not scalable.|
-|
+|2 way valve|3/16"|12V|[MPJA](http://www.mpja.com/Solenoid-Valve-Normally-Closed-12VDC-Used/productinfo/33957+HD), [Manufacturer](https://translate.google.com/translate?hl=en&sl=zh-CN&u=http://www.conjoin.com.cn/products.php%3Fl%3D5&prev=search), [SkyCraft](https://www.skycraftsurplus.com/12vdcpneumaticsolenoidvalve-1.aspx)|2.95$|Reused components. Not scalable.|
 
 ### Choice of pressure sensor: [2SMPP03](https://www.digikey.com/product-detail/en/omron-electronics-inc-emc-div/2SMPP03/Z3639-ND/3671590)
 
-The most expensive component in the entire setup is a pressure sensor. Since one pressure sensor is required for every pneumatic channel, the cost scales linearly with number of channels. Pressure sensors that work in <-0.5 atm to >+0.5 atm range are relatively expensive since few large industries demand such a sensor. The cheapest such sensor I could find is [2SMPP03](https://www.digikey.com/product-detail/en/omron-electronics-inc-emc-div/2SMPP03/Z3639-ND/3671590) by Omron electronics. It is priced at <7$/per unit for 5 units and while it needs additional circuitry to work, the effort is well worth it. The cheapest sensor that works standalone is at least 30$/per unit at 5 units. The rest of the system has to be designed around this part as this has the largest cost savings associated with it.
+It's easy for the pressure sensor to be the most expensive piece in the kit. Since one pressure sensor is required for every pneumatic channel, the cost scales linearly with number of channels. Pressure sensors that work in <-0.5 atm to >+0.5 atm range are relatively expensive since few large industries demand such a sensor. The cheapest such sensor I could find is [2SMPP03](https://www.digikey.com/product-detail/en/omron-electronics-inc-emc-div/2SMPP03/Z3639-ND/3671590) by Omron electronics. It is priced at <7$/per unit for 5 units and while it needs additional circuitry to work, the effort is well worth it. The cheapest sensor that works standalone is at least 30$/per unit at 5 units. So I have designed the rest of the system around this sensor.
 
 ### v0.1 PCB design
 
-Used Aiyima pumps and nano on master board. The slave board has pressure sensor and three two way valves. Upto four slave boards can attach to a single master board, as shown in mock-up below.
+Used Aiyima pumps and an Arduino Nano on master board. The slave board has pressure sensor and three two way valves. Upto four slave boards can attach to a single master board, as shown in mock-up below.
 
 ![Mock-up of master and slave board positions](https://imgur.com/YLw2Cig.png)
 
@@ -116,24 +138,6 @@ Programmable Air gets feedback from a pressure sensor. This is because I was fol
 
 **Result**: Flow sensors are too expensive! Like 80$ for a [cheap one](https://www.digikey.com/product-detail/en/honeywell-sensing-and-productivity-solutions/AWM1100V/AWM1100V-ND/2552655). Not even gonna think about using it for a while.
 
-### What can you use it for?
-
-#### Vacuum
-
-* Electronic component pick and place. Video demo:
-
-[![Electronic component pick and place](https://i.vimeocdn.com/video/695348325.webp?mw=540)](https://vimeo.com/265359252)
-
-* Universal vacuum based gripper. Video demo:
-
-[![Universal vacuum based gripper](https://i.vimeocdn.com/video/695659195.webp?mw=540)](https://vimeo.com/265605796)
-
-
-#### Inflatable
-
-* Crazy soft robots
-* Balloons!
-* Small air brush? I'd love it if the system could be adopted to make an automated air brush/graffiti gun. But airbrushes seem to require around 10L/min air flow rate and the current pump can only deliver 1-2L/mind
 
 ### Changes I'd like to work on:
 * LittleBits or mCookie like magnetic snap connectors instead of dupont sticks. Failing that, just plain better connections.. dupont connectors aren't meant for this kind of mechanical strains. Maybe old school RS232 or serial type stuff?
