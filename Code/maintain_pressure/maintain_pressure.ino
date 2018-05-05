@@ -9,6 +9,15 @@ float clean_pressure;
 float temp_pressure;
 float alpha = 0.7;
 
+float setPressure = 2000;
+float tolerence = 100;
+
+#define INCREASING 1
+#define DECREASING -1
+#define UN_KNOWN 0
+
+int state;
+
 void setup() {
   Serial.begin(115200);
   pressureSensor1.begin(A5,  13, 32);
@@ -33,17 +42,34 @@ void loop() {
   Serial.print("0,");
   Serial.println(clean_pressure);
 
-  if (clean_pressure > 2000) {
+  if (clean_pressure > setPressure + tolerence) {
     vent(2);
+    state = DECREASING;
     //    suck(2);
   }
   else {
-    blow(2);
+    if (clean_pressure < (setPressure - tolerence)) {
+      blow(2);
+      state = INCREASING;
+    }
+    else {
+//      if (state == UN_KNOWN) 
+      {
+        closeAll(2);
+      }
+    }
   }
-  if(millis() % 30000 < 1000){
+  if(clean_pressure < setPressure && state == DECREASING){
+    state = UN_KNOWN;
+  }
+  if(clean_pressure > setPressure && state == INCREASING){
+    state = UN_KNOWN;
+  }
+  
+  if (millis() % 30000 < 1000) {
     vent(1);
-  }  
-  else{
+  }
+  else {
     closeAll(1);
   }
 }
