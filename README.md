@@ -18,24 +18,37 @@ I feel there isn't any affordable and easy to use programmable air source availa
 
 #### Vacuum
 
-* Electronic component pick and place. Video demo:
+###### [* Electronic component pick and place.](https://vimeo.com/265359252)
 
 [![Electronic component pick and place](https://i.vimeocdn.com/video/695348325.webp?mw=540)](https://vimeo.com/265359252)
 
-* Universal vacuum based gripper. Video demo:
+###### [* Universal vacuum based gripper.](https://vimeo.com/265605796)
 
 [![Universal vacuum based gripper](https://i.vimeocdn.com/video/695659195.webp?mw=540)](https://vimeo.com/265605796)
 
 #### Inflatable
 
-* [Crazy soft robots]()
-* [Balloons!]()
+###### [* Crazy soft robots]()
+
+###### [* Balloons!](https://vimeo.com/267525611)
 
 [![Balloons!](https://i.vimeocdn.com/video/698056507.webp?mw=540)](https://vimeo.com/267525611)
 
-* [Small air brush?](): Doesn't really work. You can get it to work if the air brush is pointing down and mars is on retrograde :P Check out the failed video below. Maybe it'll give you an idea for how you can improve on it.
+##### [* Small air brush?](https://vimeo.com/268163619)
+
+Doesn't really work. You can get it to work if the air brush is pointing down and mars is on retrograde :P Check out the failed video below. Maybe it'll give you an idea for how you can improve on it.
+
+[![Air-Brush](https://i.vimeocdn.com/video/698839593.webp?mw=540)](https://vimeo.com/268163619)
 
  Most airbrushes seem to require around 10L/min air flow rate and the current pump can only deliver 1-2L/min. This small one just barely works with the pumps.
+
+#### Pressure sensor
+
+##### [* Large Impact Sensors]((https://vimeo.com/268164733)
+
+[![Large impact sensors](https://i.vimeocdn.com/video/698840522.webp?mw=540)](https://vimeo.com/268164733)
+
+Any closed inflated object can be used as an impact sensor when connected to the air pressure sensor e.g. a large flexible tube with one end closed off and another connected to the pressure sensor. When the tube is pressed a pressure spike is recorded by the sensor. This tube can be looped around a bumper car for example to act as an impact sensor.
 
 ### What's wrong with the current solutions?
 
