@@ -20,29 +20,30 @@ void setup() {
   old_pressure = pressureSensor1.get_units();
 
   initializePins();
+
+  //  analogWrite(pump[0], 128);
+  switchOnPump(1);
+  //  switchOnPump(2);
 }
 
 void loop() {
   temp_pressure = pressureSensor1.get_units();
   clean_pressure = old_pressure * (1 - alpha) + temp_pressure * alpha;
 
-  if (temp_pressure > 5) {
-    for (int i = 0; i < 3; i++) {
-      neopixel.setPixelColor(i, neopixel.Color(temp_pressure*10, 0, temp_pressure*10));
-    }
-    neopixel.show();
+  Serial.print("0,");
+  Serial.println(clean_pressure);
+
+  if (clean_pressure > 2000) {
+    vent(2);
+    //    suck(2);
   }
+  else {
+    blow(2);
+  }
+  if(millis() % 30000 < 1000){
+    vent(1);
+  }  
   else{
-    for (int i = 0; i < 3; i++) {
-      neopixel.setPixelColor(i, neopixel.Color(0, 0, 0));
-    }
-    neopixel.show();
+    closeAll(1);
   }
-
-  old_pressure = clean_pressure;
-
-  Serial.print(clean_pressure);
-
-  Serial.println();
-  delay(50);
 }

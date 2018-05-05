@@ -31,7 +31,7 @@ I feel there isn't any affordable and easy to use programmable air source availa
 * [Crazy soft robots]()
 * [Balloons!]()
 
-[![Balloons!](https://i.vimeocdn.com/video/698056507.webp?mw=540)](https://vimeo.com/267514802)
+[![Balloons!](https://i.vimeocdn.com/video/698056507.webp?mw=540)](https://vimeo.com/267525611)
 
 * [Small air brush?](): Doesn't really work. You can get it to work if the air brush is pointing down and mars is on retrograde :P Check out the failed video below. Maybe it'll give you an idea for how you can improve on it.
 

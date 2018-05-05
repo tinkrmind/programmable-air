@@ -1,15 +1,5 @@
-// Programmable Air
-// Author: tinkrmind
-// github.com/tinkrmind/programmable-air
-//
-// Simple pick and place
-// IO board 1 connected to channel 4
-// Valve board 1 connected to SMD pick and place syringe
-//
-// PCB v0.2
-//
-
 #include <Adafruit_NeoPixel.h>
+#include "HX711.h"
 
 const int pump[2] = {10, 11};
 
@@ -23,6 +13,15 @@ const int valve[9] = {  9, 8, 7,  \
 
 const int sense[3] = {6, A5, A3};
 
+long readPressure(int num=0, int times=1);
+
+HX711 pressureSensor[3] = {
+   HX711(sense[0],  SCK, 32),
+   HX711(sense[1],  SCK, 32),
+   HX711(sense[2],  SCK, 32)
+};
+//HX711 sensor(DT, SCK);
+
 #define SCK 13
 
 #define neopixelPin 12
@@ -30,32 +29,6 @@ const int sense[3] = {6, A5, A3};
 #define btn2 3
 
 Adafruit_NeoPixel neopixel = Adafruit_NeoPixel(3, neopixelPin, NEO_GRB + NEO_KHZ800);
-
-int state = 0;
-
-void setup() {
-  Serial.begin(115200);
-  while (!Serial);
-
-  // Initiate with all valve and pumps off
-  initializePins();
-
-  //switch on pumps
-  //  digitalWrite(pump[0], HIGH);
-  //  digitalWrite(pump[1], HIGH);
-}
-
-void loop() {
-  //  Serial.println(analogRead(LDR));
-  digitalWrite(6, HIGH);
-  while(1);
-//  blow(1);
-//  delay(7000);
-//  ventQuick(1);
-//  delay(3000);
-//  suck(1);
-//  delay(3000);
-}
 
 void setAllValves(int position) {
   if (position == OPEN) {
@@ -82,13 +55,11 @@ void setValve(int number, int position) {
 }
 
 void initializePins() {
-  for (int i = 0; i < 12; i++) {
+  for (int i = 0; i < 9; i++) {
     pinMode(valve[i], OUTPUT);
     digitalWrite(valve[i], LOW);
   }
-  for (int i = 0; i < 4; i++) {
-    pinMode(sense[i], INPUT);
-  }
+
   pinMode(SCK, OUTPUT);
 
   pinMode(btn1, INPUT_PULLUP);
@@ -101,7 +72,7 @@ void initializePins() {
 
   neopixel.begin();
   for (int i = 0; i < 3; i++) {
-    neopixel.setPixelColor(i, neopixel.Color(5, 0, 5));
+    neopixel.setPixelColor(i, neopixel.Color(1, 0, 1));
   }
   neopixel.show();
   Serial.println("Pins initialised.");
@@ -112,7 +83,7 @@ void initializePins() {
 void blow(int i) {
   Serial.print("Blow: ");
   Serial.println(i);
-  if (i < 0 || i > 2) {
+  if (i >= 0 && i <= 2) {
     setValve(i * 3 + 0, OPEN);
     setValve(i * 3 + 1, CLOSE);
     setValve(i * 3 + 2, CLOSE);
@@ -122,7 +93,7 @@ void blow(int i) {
 void vent(int i) {
   Serial.print("Vent: ");
   Serial.println(i);
-  if (i > 0 && i < 2) {
+  if (i >= 0 && i <= 2) {
     setValve(i * 3 + 0, CLOSE);
     setValve(i * 3 + 1, OPEN);
     setValve(i * 3 + 2, CLOSE);
@@ -132,20 +103,36 @@ void vent(int i) {
 void ventQuick(int i) {
   Serial.print("ventQuick: ");
   Serial.println(i);
-  if (i > 0 && i < 2) {
+  if (i >= 0 && i <= 2) {
     setValve(i * 3 + 0, CLOSE);
     setValve(i * 3 + 1, OPEN);
     setValve(i * 3 + 2, OPEN);
   }
 }
 
-
 void suck(int i) {
   Serial.print("Suck: ");
   Serial.println(i);
-  if (i > 0 && i < 2) {
+  if (i >= 0 && i <= 2) {
     setValve(i * 3 + 0, CLOSE);
     setValve(i * 3 + 1, CLOSE);
     setValve(i * 3 + 2, OPEN);
   }
+}
+
+// Read pressure
+long readPressure(int num=0, int times=1){
+//  Serial.print("reading pressure sensor ");
+//  Serial.print(num);
+//  Serial.print(" Averaging ");
+//  Serial.print(times);
+//  Serial.println(" times.");
+
+  int64_t tempScaleReading = pressureSensor[num].read_average(times);
+  
+  if(tempScaleReading>pow(2, 16)){
+    tempScaleReading = tempScaleReading - pow(2, 32);
+  } 
+  long printableScaleReading=tempScaleReading;
+  return printableScaleReading;
 }
