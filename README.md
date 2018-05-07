@@ -18,21 +18,21 @@ I feel there isn't any affordable and easy to use programmable air source availa
 
 #### Vacuum
 
-###### [* Electronic component pick and place.](https://vimeo.com/265359252)
+###### [* Electronic component pick and place.](https://vimeo.com/268358924)
 
-[![Electronic component pick and place](https://i.vimeocdn.com/video/695348325.jpg?mw=540)](https://vimeo.com/265359252)
+[![SMD component pick and place](https://i.vimeocdn.com/video/695348325.jpg?mw=540)](https://vimeo.com/268358924)
 
-###### [* Universal vacuum based gripper.](https://vimeo.com/265605796)
+###### [* Universal vacuum based gripper.](https://vimeo.com/268358891)
 
-[![Universal vacuum based gripper](https://i.vimeocdn.com/video/695659195.jpg?mw=540)](https://vimeo.com/265605796)
+[![Universal vacuum based gripper](https://i.vimeocdn.com/video/695659195.jpg?mw=540)](https://vimeo.com/268358891)
 
 #### Inflatable
 
 ###### [* Crazy soft robots]()
 
-###### [* Balloons!](https://vimeo.com/267525611)
+###### [* Balloons!](https://vimeo.com/268358970)
 
-[![Balloons!](https://i.vimeocdn.com/video/698056507.jpg?mw=540)](https://vimeo.com/267525611)
+[![Balloons!](https://i.vimeocdn.com/video/698056507.jpg?mw=540)](https://vimeo.com/268358970)
 
 ##### [* Small air brush?](https://vimeo.com/268163619)
 
@@ -44,11 +44,17 @@ Doesn't really work. You can get it to work if the air brush is pointing down an
 
 #### Pressure sensor
 
-##### [* Large Impact Sensors]((https://vimeo.com/268164733)
+##### [* Large Impact Sensors]((https://vimeo.com/268358944)
 
-[![Irregular impact sensors](https://i.vimeocdn.com/video/698840522.jpg?mw=540)](https://vimeo.com/268164733)
+[![Irregular impact sensors](https://i.vimeocdn.com/video/698840522.jpg?mw=540)](https://vimeo.com/268358944)
 
 Any closed inflated object can be used as an impact sensor when connected to the air pressure sensor e.g. a large flexible tube with one end closed off and another connected to the pressure sensor. When the tube is pressed a pressure spike is recorded by the sensor. This tube can be looped around a bumper car for example to act as an impact sensor.
+
+##### [Exhalation](https://vimeo.com/268359027)
+
+[![Exhalation]()](https://vimeo.com/268359027)
+
+Controlling the air pressure inside a closed chamber allows a soft robot place in the chamber to behave as if it is being controlled without any tubes connected to  it. This facilitates easy prototyping and some funky art pieces. Inspired from [Exhalation](http://escapepod.org/2009/04/10/ep194-exhalation/) by Ted Chiang.
 
 ### What's wrong with the current solutions?
 

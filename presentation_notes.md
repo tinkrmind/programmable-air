@@ -15,7 +15,7 @@ So when I looked at the Harvard soft robotics kit, I was in familiar terrain. Th
 * Ordering Components
   - the bane of every fabrication project - the wait-time
 * Evaluating components
-  - evaluated four motors
+  - evaluated five motors
   - few different valve types
 * Designing PCBs
   - Eagle vs KiCAD
@@ -94,3 +94,24 @@ So when I looked at the Harvard soft robotics kit, I was in familiar terrain. Th
   - (d)
 
 Audience: ITP first year student
+
+### BOM
+
+For production of 10 units.
+
+|Item|Cost|
+|---|---|
+|Pumps|8$|
+|Valves|9$|
+|Pressure sensor|12$|
+|Arduino Nano| 4$|
+|TIP120|2$|
+|Passives| 2$|
+|LEDs|1$|
+|Electrical connectors|1$|
+|PCBs|2$|
+|Tubes|2$|
+|Pneumatic connectors|2$|
+|Power supply|3$|
+|USB Cable|2$|
+|Total|50$|
