@@ -1,3 +1,4 @@
+
 #include "HX711.h"
 #include "programmable_air.h"
 
@@ -30,6 +31,7 @@ void setup() {
 
   initializePins();
 
+  //  while(1);
   //  analogWrite(pump[0], 128);
   switchOnPump(1);
   //  switchOnPump(2);
@@ -38,7 +40,7 @@ void setup() {
 void loop() {
   temp_pressure = pressureSensor1.get_units();
   clean_pressure = old_pressure * (1 - alpha) + temp_pressure * alpha;
-  
+
   Serial.print(setPressure);
   Serial.print(",0,");
   Serial.println(clean_pressure);
@@ -53,12 +55,12 @@ void loop() {
       blow(2);
       state = INCREASING;
     }
-//    else {
-//      if (state == UN_KNOWN)
-//      {
+    else {
+      if (state == UN_KNOWN)
+      {
 //        closeAll(2);
-//      }
-//    }
+      }
+    }
   }
   if (clean_pressure < setPressure && state == DECREASING) {
     state = UN_KNOWN;

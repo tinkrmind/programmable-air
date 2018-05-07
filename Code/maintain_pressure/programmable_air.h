@@ -48,8 +48,9 @@ void initializePins() {
 
   neopixel.begin();
   for (int i = 0; i < 3; i++) {
-    neopixel.setPixelColor(i, neopixel.Color(1, 0, 1));
+    neopixel.setPixelColor(i, neopixel.Color(5, 0, 5));
   }
+  neopixel.show();
   neopixel.show();
   Serial.println("Pins initialised.");
 }

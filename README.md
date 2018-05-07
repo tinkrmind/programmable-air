@@ -46,7 +46,7 @@ Doesn't really work. You can get it to work if the air brush is pointing down an
 
 ##### [* Large Impact Sensors]((https://vimeo.com/268164733)
 
-[![Large impact sensors](https://i.vimeocdn.com/video/698840522.webp?mw=540)](https://vimeo.com/268164733)
+[![Irregular impact sensors](https://i.vimeocdn.com/video/698840522.webp?mw=540)](https://vimeo.com/268164733)
 
 Any closed inflated object can be used as an impact sensor when connected to the air pressure sensor e.g. a large flexible tube with one end closed off and another connected to the pressure sensor. When the tube is pressed a pressure spike is recorded by the sensor. This tube can be looped around a bumper car for example to act as an impact sensor.
 
