@@ -1,6 +1,6 @@
 
 # Created by https://www.gitignore.io/api/osx,adobe,macos,linux,eagle,kicad
-
+gitignore/*
 ### Adobe ###
 # Adobe Source Files
 *.psd

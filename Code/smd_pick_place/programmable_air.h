@@ -14,7 +14,6 @@ const int valve[9] = {  9, 8, 7,  \
 const int sense[3] = {6, A5, A3};
 
 float readPressure(int num = 0, int times = 1);
-void suck(int i);
 
 HX711 pressureSensor1;
 //HX711 scale(DT, SCK);
@@ -31,10 +30,6 @@ HX711 pressureSensor[3] = {
 #define neopixelPin 12
 #define btn1 2
 #define btn2 3
-
-#define INCREASING 1
-#define DECREASING -1
-#define UN_KNOWN 0
 
 Adafruit_NeoPixel neopixel = Adafruit_NeoPixel(3, neopixelPin, NEO_GRB + NEO_KHZ800);
 
@@ -132,14 +127,9 @@ void ventQuick(int i) {
   }
   if (i >= 1 && i <= 3) {
     i = i - 1;
-    if (readPressure() > 50) {
-      setValve(i * 3 + 0, CLOSE);
-      setValve(i * 3 + 1, OPEN);
-      setValve(i * 3 + 2, OPEN);
-    }
-    else{
-      suck(i+1);
-    }
+    setValve(i * 3 + 0, CLOSE);
+    setValve(i * 3 + 1, OPEN);
+    setValve(i * 3 + 2, OPEN);
   }
 }
 
@@ -169,15 +159,15 @@ void closeAll(int i) {
   }
 }
 
-void switchOnPump(int num,  int percentagePower = 100) {
+void switchOnPump(int num) {
   if (num == 1 || num == 2) {
-    analogWrite(pump[num - 1], percentagePower * 255 / 100);
+    digitalWrite(pump[num - 1], HIGH);
   }
 }
 
-void switchOffPump(int num, int percentagePower = 100) {
+void switchOffPump(int num) {
   if (num == 1 || num == 2) {
-    analogWrite(pump[num - 1], percentagePower * 255 / 100);
+    digitalWrite(pump[num - 1], LOW);
   }
 }
 
