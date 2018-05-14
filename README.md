@@ -52,7 +52,7 @@ Any closed inflated object can be used as an impact sensor when connected to the
 
 ##### [Exhalation](https://vimeo.com/268359027)
 
-[![Exhalation]()](https://vimeo.com/268359027)
+[![Exhalation](https://i.vimeocdn.com/video/699069169.jpg?mw=540)](https://vimeo.com/268359027)
 
 Controlling the air pressure inside a closed chamber allows a soft robot place in the chamber to behave as if it is being controlled without any tubes connected to  it. This facilitates easy prototyping and some funky art pieces. Inspired from [Exhalation](http://escapepod.org/2009/04/10/ep194-exhalation/) by Ted Chiang.
 
