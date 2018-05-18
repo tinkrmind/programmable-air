@@ -3850,10 +3850,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="8"/>
-<wire x1="90.17" y1="-25.4" x2="90.17" y2="-24.13" width="0.1524" layer="91"/>
-<wire x1="90.17" y1="-24.13" x2="80.01" y2="-24.13" width="0.1524" layer="91"/>
+<wire x1="90.17" y1="-25.4" x2="80.01" y2="-25.4" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="80.01" y1="-24.13" x2="80.01" y2="-31.75" width="0.1524" layer="91"/>
+<wire x1="80.01" y1="-25.4" x2="80.01" y2="-31.75" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>

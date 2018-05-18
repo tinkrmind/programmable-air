@@ -120,6 +120,7 @@ To make life easier, I decided to go for following minimum specifications
 |Omron +-pressure sensor|3mm|Wheatstone|[DigiKey](https://www.digikey.com/product-detail/en/omron-electronics-inc-emc-div/2SMPP03/Z3639-ND/3671590)|8$|Needs HX711+LM10CN or [INA125](https://learn.adafruit.com/smart-cocktail-shaker/hardware) to work with arduino|
 |3 way valve|3/16"|12V|[Elecrow](https://www.elecrow.com/electric-2-position-3-way-12v-micro-solenoid-valve-for-gas.html)|2.5$||
 |2 way valve|3/16"|12V|[MPJA](http://www.mpja.com/Solenoid-Valve-Normally-Closed-12VDC-Used/productinfo/33957+HD), [Manufacturer](https://translate.google.com/translate?hl=en&sl=zh-CN&u=http://www.conjoin.com.cn/products.php%3Fl%3D5&prev=search), [SkyCraft](https://www.skycraftsurplus.com/12vdcpneumaticsolenoidvalve-1.aspx)|2.95$|Reused components. Not scalable.|
+|2 way valve |3/16"|12V|[Alibaba](https://jmakervalve.en.alibaba.com/product/60692195756-805059697/JMKV20_BB12A1_2_way_12v_dc_water_solenoid_valve_for_high_end_medical_equipment.html?spm=a2700.icbuShop.prewdfa4cf.86.41256ab8Fp0fQF)|
 
 ### Choice of pressure sensor: [2SMPP03](https://www.digikey.com/product-detail/en/omron-electronics-inc-emc-div/2SMPP03/Z3639-ND/3671590)
 
