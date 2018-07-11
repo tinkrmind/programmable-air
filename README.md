@@ -2,7 +2,7 @@
 
 ## Press
 
-[Hackaday mention!](https://hackaday.com/2018/05/24/programmable-air-makes-robotics-a-breeze/)
+* [Hackaday mention!](https://hackaday.com/2018/05/24/programmable-air-makes-robotics-a-breeze/)
 
 ## Elevator Pitch
 
