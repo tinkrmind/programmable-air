@@ -1,5 +1,9 @@
 # Programmable Air
 
+## Press
+
+[Hackaday mention!](https://hackaday.com/2018/05/24/programmable-air-makes-robotics-a-breeze/)
+
 ## Elevator Pitch
 
 [![quad-chart](https://i.imgur.com/VRT51xQ.png)](https://docs.google.com/presentation/d/1pUnGk4v_wuCpisjBpNWZSJUyDwAFb4v1xceV4rX-Uv4/edit?usp=sharing)
