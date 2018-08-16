@@ -91,7 +91,7 @@ So when I looked at the Harvard soft robotics kit, I was in familiar terrain. Th
   - (a) A kit like makey makey?
   - (b) Little bits or grove modules
   - (c) Standalone Arduino compatible modules
-  - (d)
+  - (d) ?
 
 Audience: ITP first year student
 

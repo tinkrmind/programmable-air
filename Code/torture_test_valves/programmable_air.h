@@ -1,32 +1,27 @@
+// Programmable Air
+// Author: tinkrmind
+// github.com/tinkrmind/programmable-air
+// v0.3
+
 #include <Adafruit_NeoPixel.h>
-#include "HX711.h"
 
 const int pump[2] = {10, 11};
+const int pump_sense[2] = {A6, A7};
 
 #define OPEN 1
 #define CLOSE 0
 // vacuum, atmosphere, pressure
-const int valve[9] = {  9, 8, 7,  \
-                        5, 4, A4, \
-                        A0, A1, A2
+const int valve[9] = {   5,  4,  6,  \
+                         8,  7,  9,  \
+                         A1, A4, A0
                      };
 
-const int sense[3] = {6, A5, A3};
+const int sense[3] = {A3, A2, A5};
 
-long readPressure(int num=0, int times=1);
-
-HX711 pressureSensor[3] = {
-   HX711(sense[0],  SCK, 32),
-   HX711(sense[1],  SCK, 32),
-   HX711(sense[2],  SCK, 32)
-};
-//HX711 sensor(DT, SCK);
-
-#define SCK 13
+int readPressure(int num = 0, int times = 1);
 
 #define neopixelPin 12
-#define btn1 2
-#define btn2 3
+const int btn[2] = { 2, 3 };
 
 Adafruit_NeoPixel neopixel = Adafruit_NeoPixel(3, neopixelPin, NEO_GRB + NEO_KHZ800);
 
@@ -62,8 +57,8 @@ void initializePins() {
 
   pinMode(SCK, OUTPUT);
 
-  pinMode(btn1, INPUT_PULLUP);
-  pinMode(btn2, INPUT_PULLUP);
+  pinMode(btn[0], INPUT_PULLUP);
+  pinMode(btn[1], INPUT_PULLUP);
 
   for (int i = 0; i < 2; i++) {
     pinMode(pump[i], OUTPUT);
@@ -121,18 +116,21 @@ void suck(int i) {
 }
 
 // Read pressure
-long readPressure(int num=0, int times=1){
-//  Serial.print("reading pressure sensor ");
-//  Serial.print(num);
-//  Serial.print(" Averaging ");
-//  Serial.print(times);
-//  Serial.println(" times.");
+int readPressure(int num = 0, int times = 1) {
+  //  Serial.print("reading pressure sensor ");
+  //  Serial.print(num);
+  //  Serial.print(" Averaging ");
+  //  Serial.print(times);
+  //  Serial.println(" times.");
 
-  int64_t tempScaleReading = pressureSensor[num].read_average(times);
-  
-  if(tempScaleReading>pow(2, 16)){
-    tempScaleReading = tempScaleReading - pow(2, 32);
-  } 
-  long printableScaleReading=tempScaleReading;
-  return printableScaleReading;
+  long pressure = 0;
+
+  for (int i = 0; i < times; i++) {
+    pressure += analogRead(sense[num]);
+  }
+  pressure /= times;
+
+  //  Serial.print("Pressure: ");
+  Serial.println(pressure);
+  return int(pressure);
 }
