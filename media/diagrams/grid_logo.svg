@@ -221,16 +221,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7402247"
-     inkscape:cx="639.35398"
+     inkscape:cx="413.74681"
      inkscape:cy="456.78679"
      inkscape:document-units="mm"
      inkscape:current-layer="g6606"
      showgrid="true"
      units="px"
-     inkscape:window-width="3072"
-     inkscape:window-height="1634"
-     inkscape:window-x="-11"
-     inkscape:window-y="-11"
+     inkscape:window-width="2560"
+     inkscape:window-height="1361"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
      inkscape:window-maximized="1"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
@@ -279,14 +279,18 @@
          x="-152.39999"
          y="161.53331" />
       <rect
-         style="fill:#000005;fill-opacity:0.73170733;stroke:#6bbfe2;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:#000005;fill-opacity:0.73170734;stroke:#6bbfe2;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="rect7551"
          width="135.46666"
-         height="135.46666"
-         x="0"
-         y="161.53331" />
+         height="113.66303"
+         x="-4.2495042e-008"
+         y="180.12001"
+         inkscape:export-xdpi="150"
+         inkscape:export-ydpi="150" />
       <g
-         id="g869">
+         id="g869"
+         inkscape:export-xdpi="150"
+         inkscape:export-ydpi="150">
         <rect
            inkscape:export-ydpi="100"
            inkscape:export-xdpi="100"
@@ -392,7 +396,9 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.69999981px;line-height:1.25;font-family:'Neon 80s';-inkscape-font-specification:'Neon 80s';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
          x="8.5890293"
          y="274.49994"
-         id="text847"><tspan
+         id="text847"
+         inkscape:export-xdpi="150"
+         inkscape:export-ydpi="150"><tspan
            sodipodi:role="line"
            id="tspan845"
            x="8.5890293"
