@@ -19,17 +19,17 @@ void setup() {
   initializePins();
 
   //switch on pumps
-    digitalWrite(pump[0], HIGH);
-    digitalWrite(pump[1], HIGH);
+  //  digitalWrite(pump[0], HIGH);
+  //  digitalWrite(pump[1], HIGH);
 }
 
 void loop() {
-  blow(i%3);
   delay(100);
-  suck(i%3);
+  suck(0);
   delay(100);
-  vent(i%3);
+  vent(0);
   delay(100);
-  i++;
+  readPressure(0);
+  delay(100);
 }
 
