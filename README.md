@@ -1,4 +1,4 @@
-![Header](https://github.com/tinkrmind/programmable-air/blob/master/media/diagrams/header_long.png)
+![Header](https://github.com/tinkrmind/programmable-air/blob/master/media/diagrams/long_header.png)
 
 ## Press
 
