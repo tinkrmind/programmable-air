@@ -1,9 +1,10 @@
 ![Header](https://github.com/tinkrmind/programmable-air/blob/master/media/diagrams/long_header.png)
 
-## Press
+## Buzz
 
 * [Hackaday mention!](https://hackaday.com/2018/05/24/programmable-air-makes-robotics-a-breeze/)
 * [Hackster mention!!](https://blog.hackster.io/programmable-air-is-an-arduino-based-air-pump-for-your-soft-robotics-projects-9945c6ed96aa)
+* [Maker Faire](https://makerfaire.com/maker/entry/67747/)
 
 ## Elevator Pitch
 
