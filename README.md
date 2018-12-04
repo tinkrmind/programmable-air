@@ -1,6 +1,6 @@
 ![Header](https://github.com/tinkrmind/programmable-air/blob/master/media/diagrams/long_header.png)
 
-## NOTE: Development of Programmable-Air has moved to [Programmable-Air Org repo](htts://github.com/programmable-air). This repo is maintained for the sake of completeness but is no longer actively maintained. Please use [Programmable-Air Org repo](htts://github.com/programmable-air) for code and reference material.
+## NOTE: Development of Programmable-Air has moved to [Programmable-Air Org repo](https://github.com/programmable-air). This repo is maintained for the sake of completeness but is no longer actively maintained. Please use [Programmable-Air Org repo](https://github.com/programmable-air) for code and reference material.
 
 ## Buzz
 
